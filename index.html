@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elyrae – Tijdloze Sieraden</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">ELYRAE</div>
+
+    <!-- Hamburger -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Navigatie -->
+    <nav class="nav" id="nav">
+      <a href="#">Home</a>
+      <a href="#">Shop Alles</a>
+      <a href="#">Ringen</a>
+      <a href="#">Armbanden</a>
+      <a href="#">Oorbellen</a>
+      <a href="#">Kettingen</a>
+      <a href="#">Sets</a>
+      <a href="#">Reviews</a>
+    </nav>
+  </header>
+
+  
+  <section class="hero">
+    <div class="hero-text">
+      <img src="logo2.png" alt="Elyrae Logo" class="hero-logo">
+      <h1>Tijdloze elegantie in elk detail</h1>
+      <p>Ontdek de Elyrae-collectie – verfijnde sieraden met karakter.</p>
+      <a href="#" class="btn">Shop nu</a>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <h2>Wat onze klanten zeggen</h2>
+    <div class="reviews-slider">
+      <div class="review active">
+        <img src="fav.png" alt="Klant foto" class="review-img">
+        <p>“De ringen zijn prachtig en van hoge kwaliteit!”</p>
+        <span>– Lisa</span>
+      </div>
+      <div class="review">
+        <img src="fav2.png" alt="Klant foto" class="review-img">
+        <p>“Snelle levering en prachtige service.”</p>
+        <span>– Tom</span>
+      </div>
+      <div class="review">
+        <img src="fav3.png" alt="Klant foto" class="review-img">
+        <p>“Super blij met mijn armband, ziet er elegant uit.”</p>
+        <span>– Noor</span>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+  <section class="featured">
+    <h2>Onze Favorieten</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="fav.png" alt="Ring">
+        <p>Rosé Gouden Ring</p>
+      </div>
+      <div class="product-card">
+        <img src="fav2.png" alt="Armband">
+        <p>Subtiele Armband</p>
+      </div>
+      <div class="product-card">
+        <img src="fav3.png" alt="Oorbellen">
+        <p>Minimalistische Oorbellen</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Elyrae</p>
+  </footer>
+
+  <script>
+    // Fade-in animatie bij scroll
+    const elements = document.querySelectorAll('.fade-in');
+    window.addEventListener('scroll', () => {
+      elements.forEach(el => {
+        const pos = el.getBoundingClientRect().top;
+        if (pos < window.innerHeight - 100) el.classList.add('visible');
+      });
+    });
+
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      nav.classList.toggle('open');
+    });
+
+    const reviews = document.querySelectorAll('.review');
+  let current = 0;
+
+  function showNextReview() {
+    reviews[current].classList.remove('active');
+    current = (current + 1) % reviews.length;
+    reviews[current].classList.add('active');
+  }
+
+  // Auto slider elke 4 seconden
+  setInterval(showNextReview, 4000);
+  </script>
+</body>
+</html>
