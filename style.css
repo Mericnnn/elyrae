@@ -312,7 +312,7 @@ body {
   }
 
   .nav a {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-family: 'Playfair Display', serif;
     color: var(--text);
     text-transform: uppercase;
