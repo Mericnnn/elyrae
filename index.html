@@ -4,12 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elyrae – Tijdloze Sieraden</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header">
-    <div class="logo">ELYRAE</div>
+    <div class="logo">Test</div>
 
     <!-- Hamburger -->
     <div class="hamburger" id="hamburger">
@@ -20,85 +19,80 @@
 
     <!-- Navigatie -->
     <nav class="nav" id="nav">
-      <a href="#">Home</a>
-      <a href="#">Shop Alles</a>
-      <a href="#">Ringen</a>
-      <a href="#">Armbanden</a>
-      <a href="#">Oorbellen</a>
-      <a href="#">Kettingen</a>
-      <a href="#">Sets</a>
-      <a href="#">Reviews</a>
+      <a href="index.html">Home</a>
+      <a href="#">Placeholder</a>
+      <a href="#">Over ons</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  
   <section class="hero">
     <div class="hero-text">
-      <img src="logo2.png" alt="Elyrae Logo" class="hero-logo">
-      <h1>Tijdloze elegantie in elk detail</h1>
-      <p>Ontdek de Elyrae-collectie – verfijnde sieraden met karakter.</p>
-      <a href="#" class="btn">Shop nu</a>
+      <!-- <img src="logo2.png" alt="Elyrae Logo" class="hero-logo"> -->
+      <h1>BLABLABLA</h1>
+      <p>Placeholder, placeholder, placeholder</p>
+      <a href="#" class="btn">test</a>
     </div>
   </section>
-
-  <section class="reviews">
-    <h2>Wat onze klanten zeggen</h2>
-    <div class="reviews-slider">
-      <div class="review active">
-        <img src="fav.png" alt="Klant foto" class="review-img">
-        <p>“De ringen zijn prachtig en van hoge kwaliteit!”</p>
-        <span>– Lisa</span>
-      </div>
-      <div class="review">
-        <img src="fav2.png" alt="Klant foto" class="review-img">
-        <p>“Snelle levering en prachtige service.”</p>
-        <span>– Tom</span>
-      </div>
-      <div class="review">
-        <img src="fav3.png" alt="Klant foto" class="review-img">
-        <p>“Super blij met mijn armband, ziet er elegant uit.”</p>
-        <span>– Noor</span>
-      </div>
-    </div>
-  </section>
-  
-  
-  
   
   <section class="featured">
-    <h2>Onze Favorieten</h2>
+    <h2>Placeholder</h2>
     <div class="product-grid">
       <div class="product-card">
-        <img src="fav.png" alt="Ring">
-        <p>Rosé Gouden Ring</p>
+        <p></p>
       </div>
       <div class="product-card">
-        <img src="fav2.png" alt="Armband">
-        <p>Subtiele Armband</p>
+        <p></p>
       </div>
       <div class="product-card">
-        <img src="fav3.png" alt="Oorbellen">
-        <p>Minimalistische Oorbellen</p>
+        <p></p>
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <p>© 2025 Elyrae</p>
+    <div class="footer-container">
+      <!-- Privacybeleid -->
+      <div class="footer-column">
+        <img src="logo2.png" class="logofooter">
+      </div>
+  
+      <!-- Openingstijden -->
+      <div class="footer-column">
+        <h3>Openingstijden</h3>
+        <ul class="opening-hours">
+          <li>Maandag: 09:00 - 18:00</li>
+          <li>Dinsdag: 09:00 - 18:00</li>
+          <li>Woensdag: 09:00 - 18:00</li>
+          <li>Donderdag: 09:00 - 18:00</li>
+          <li>Vrijdag: 09:00 - 18:00</li>
+          <li>Zaterdag: 10:00 - 17:00</li>
+          <li>Zondag: Gesloten</li>
+        </ul>
+      </div>
+  
+      <!-- Socials -->
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <a href="https://wa.me/31685774713" target="_blank" class="whatsapp-link2">
+          <img src="whatsapp.png" alt="WhatsApp" class="whatsapp-icon2">
+          WhatsApp ons
+        </a>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+        <ul>
+            <li><a href="/privacybeleid">Privacybeleid</a></li>
+        </ul>
+      <p>© 2025 Mijn Website. Alle rechten voorbehouden.</p>
+    </div>
   </footer>
 
   <script>
-    // Fade-in animatie bij scroll
-    const elements = document.querySelectorAll('.fade-in');
-    window.addEventListener('scroll', () => {
-      elements.forEach(el => {
-        const pos = el.getBoundingClientRect().top;
-        if (pos < window.innerHeight - 100) el.classList.add('visible');
-      });
-    });
-
-    // Hamburger menu toggle
-    const hamburger = document.getElementById('hamburger');
+    
+ // Hamburger menu toggle
+ const hamburger = document.getElementById('hamburger');
     const nav = document.getElementById('nav');
 
     hamburger.addEventListener('click', () => {
@@ -106,17 +100,6 @@
       nav.classList.toggle('open');
     });
 
-    const reviews = document.querySelectorAll('.review');
-  let current = 0;
-
-  function showNextReview() {
-    reviews[current].classList.remove('active');
-    current = (current + 1) % reviews.length;
-    reviews[current].classList.add('active');
-  }
-
-  // Auto slider elke 4 seconden
-  setInterval(showNextReview, 4000);
   </script>
 </body>
 </html>

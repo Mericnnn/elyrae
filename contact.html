@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">Test</div>
+    
+        <!-- Hamburger -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+    
+        <!-- Navigatie -->
+        <nav class="nav" id="nav">
+          <a href="index.html">Home</a>
+          <a href="#">Placeholder</a>
+          <a href="#">Over ons</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+    
+
+  <!-- HERO / Intro -->
+  <section class="hero contact-hero">
+    <div class="hero-text">
+      <h1>Kom in contact</h1>
+      <p>Heb je vragen of wil je een bericht sturen? Vul het formulier in of neem direct contact op!</p>
+    </div>
+  </section>
+
+  <!-- CONTACT GRID -->
+  <section class="contact-section">
+    <div class="contact-container">
+      
+      <!-- Contact Formulier -->
+      <div class="contact-form">
+        <h2>Stuur ons een bericht</h2>
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact">
+          <p hidden>
+            <label>Laat dit veld leeg: <input name="bot-field"></label>
+          </p>
+
+          <label>Naam</label>
+          <input type="text" name="name" placeholder="Je naam" required>
+
+          <label>Email</label>
+          <input type="email" name="email" placeholder="je@email.nl" required>
+
+          <label>Bericht</label>
+          <textarea name="message" rows="6" placeholder="Typ hier je bericht..." required></textarea>
+
+          <button type="submit" class="btn">Verstuur</button>
+        </form><br><br>
+
+        <p>
+            <a href="https://wa.me/31685774713" target="_blank" class="whatsapp-link"> 
+                <img src="whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+                <strong>Stuur ons gerust een bericht via whatsapp.</strong> 
+            </a>
+        </p>
+      </div>
+
+      <!-- Contact Info + WhatsApp -->
+      <div class="contact-info">
+        <h2>Contactinformatie</h2>
+        <p><strong>Telefoon:</strong> 0383335333</p>
+        <p><strong>Email:</strong> info@placeholder.nl</p>
+        <br>
+        <h3>Openingstijden</h3>
+        <ul>
+          <li>Maandag – Vrijdag: 10:00 - 20:00</li>
+          <li>Zaterdag: 10:00 - 22:00</li>
+          <li>Zondag: Gesloten</li>
+        </ul>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- MAPS FULL WIDTH -->
+  <section class="map-section">
+    <iframe
+      src="https://www.google.com/maps?q=Schubertstraat%2018&output=embed"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Privacybeleid -->
+      <div class="footer-column">
+        <img src="logo2.png" class="logofooter">
+      </div>
+  
+      <!-- Openingstijden -->
+      <div class="footer-column">
+        <h3>Openingstijden</h3>
+        <ul class="opening-hours">
+          <li>Maandag: 09:00 - 18:00</li>
+          <li>Dinsdag: 09:00 - 18:00</li>
+          <li>Woensdag: 09:00 - 18:00</li>
+          <li>Donderdag: 09:00 - 18:00</li>
+          <li>Vrijdag: 09:00 - 18:00</li>
+          <li>Zaterdag: 10:00 - 17:00</li>
+          <li>Zondag: Gesloten</li>
+        </ul>
+      </div>
+  
+      <!-- Socials -->
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <a href="https://wa.me/31685774713" target="_blank" class="whatsapp-link2">
+          <img src="whatsapp.png" alt="WhatsApp" class="whatsapp-icon2">
+          WhatsApp ons
+        </a>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+        <ul>
+            <li><a href="/privacybeleid">Privacybeleid</a></li>
+        </ul>
+      <p>© 2025 Mijn Website. Alle rechten voorbehouden.</p>
+    </div>
+  </footer>
+  
+  <script>
+    // Hamburger functionaliteit
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+    
+  </script>
+</body>
+</html>
