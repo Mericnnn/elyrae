@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_arrow_up" />
 </head>
 <body>
     <header class="header">
         <div class="logo">Test</div>
-    
         <!-- Hamburger -->
         <div class="hamburger" id="hamburger">
           <span></span>
@@ -81,6 +81,10 @@
           <li>Zondag: Gesloten</li>
         </ul>
       </div>
+
+      <div class="contact-img">
+       <img src="logo3.png" class="contactfoto">
+      </div>
     </div>
   </section>
 
@@ -97,9 +101,9 @@
   <footer class="footer">
     <div class="footer-container">
       <!-- Privacybeleid -->
-      <div class="footer-column">
-        <!-- <img src="logo2.png" class="logofooter"> -->
-      </div>
+      <!-- <div class="footer-column">
+        <img src="logo2.png" class="logofooter">
+      </div> -->
   
       <!-- Openingstijden -->
       <div class="footer-column">
@@ -127,11 +131,15 @@
   
     <div class="footer-bottom">
         <ul>
-            <li><a href="/privacybeleid">Privacybeleid</a></li>
+            <li><a href="privacybeleid.html">Privacybeleid</a></li>
         </ul>
       <p>© 2025 Mijn Website. Alle rechten voorbehouden.</p>
     </div>
   </footer>
+    <button id="toTopBtn" title="Ga naar boven"><span class="material-symbols-outlined">
+        keyboard_arrow_up
+        </span>
+    </button>
   
   <script>
     // Hamburger functionaliteit
@@ -143,6 +151,24 @@
       hamburger.classList.toggle('active');
     });
     
+    const toTopBtn = document.getElementById("toTopBtn");
+
+    // Laat button zien bij scrollen
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        // Als je meer dan 200px naar beneden scrollt, toon de knop
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            toTopBtn.style.display = "block";
+        } else {
+            toTopBtn.style.display = "none";
+        }
+    }
+
+    // Scroll naar boven wanneer knop wordt geklikt
+    toTopBtn.addEventListener("click", function(){
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   </script>
 </body>
 </html>
