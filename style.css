@@ -65,9 +65,19 @@ body {
   border-bottom: 2px solid transparent;
 }
 
+/* Hover effect */
 .nav a:hover {
   border-bottom: 2px solid var(--soft);
+  color: var(--soft);
 }
+
+/* Actieve link */
+.nav a.active {
+  border-bottom: 2px solid var(--soft);
+  color: var(--soft);
+}
+
+
 
 /* -------------------- HERO -------------------- */
 .hero {
@@ -362,6 +372,7 @@ body {
 .contact-form button:hover {
   background-color: var(--soft);
   transform: translateY(-2px);
+  color: var(--accent);
 }
 
 .contact-info {
@@ -543,7 +554,7 @@ body {
   }
 
   .hero-text h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .hero-text p {

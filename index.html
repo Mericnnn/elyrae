@@ -20,10 +20,10 @@
 
     <!-- Navigatie -->
     <nav class="nav" id="nav">
-      <a href="index.html">Home</a>
-      <a href="#">Placeholder</a>
-      <a href="#">Over ons</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="#" class="active">Placeholder</a>
+      <a href="#" class="active">Over ons</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
   </header>
 
@@ -120,8 +120,18 @@
     }
 
     // Scroll naar boven wanneer knop wordt geklikt
-    toTopBtn.addEventListener("click", function(){
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+    const links = document.querySelectorAll('.nav a');
+
+    links.forEach(link => {
+      // alleen de bestandsnaam van href vergelijken
+      const linkFile = link.getAttribute('href').split("/").pop();
+      const currentFile = window.location.pathname.split("/").pop();
+
+      if(linkFile === currentFile) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active'); // verwijder voor de rest
+      }
     });
 </script>
 </body>
