@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Mako&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  src: url('./fonts/MaterialSymbolsOutlined.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+
 :root {
   --background: #f9f9f9;
   --accent:  #222423;
@@ -831,6 +844,7 @@ body {
   text-align: center;
   margin-bottom: 30px;
   font-size: 2.3rem;
+  font-family: 'Playfair Display', serif;
   color: var(--accent);
   font-weight: bolder;
 }
@@ -851,8 +865,9 @@ body {
   text-align: left;
   font-size: 1.1em;
   padding: 15px;
+  color: var(--accent);
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 400;
   transition: color 0.3s;
 }
 
