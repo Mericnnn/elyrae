@@ -409,7 +409,7 @@ body {
 }
 
 /* Icon styling */
-.contact-card i.material-icons {
+.contact-card i.material-symbols-outlined {
   font-size: 3rem; /* veel groter dan standaard */
   color: var(--soft);
   transition: transform 0.3s ease, color 0.3s ease;
@@ -418,7 +418,7 @@ body {
 }
 
 /* Icon animation bij hover op de card */
-.contact-card:hover i.material-icons {
+.contact-card:hover i.material-symbols-outlined {
   transform: scale(1.3) rotate(-10deg); /* iets draaien en groter */
   color: var(--accent); /* kleur verandert */
 }
