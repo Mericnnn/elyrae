@@ -6,6 +6,7 @@
   <title>Contact</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_arrow_up" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -19,26 +20,52 @@
     
         <!-- Navigatie -->
         <nav class="nav" id="nav">
-          <a href="index.html" >Home</a>
-          <a href="#">Placeholder</a>
-          <a href="#">Over ons</a>
-          <a href="contact.html">Contact</a>
+          <a href="index.html" class="active">Home</a>
+          <a href="diensten.html" class="active">Diensten</a>
+          <a href="over-ons.html" class="active">Over ons</a>
+          <a href="contact.html" class="active">Contact</a>
         </nav>
       </header>
     
-
   <!-- HERO / Intro -->
   <section class="hero contact-hero">
     <div class="hero-text">
-      <h1>Kom in contact</h1>
-      <p>Heb je vragen of wil je een bericht sturen? Vul het formulier in of neem direct contact op!</p>
+      <h1>Contact</h1>
     </div>
   </section>
 
   <!-- CONTACT GRID -->
   <section class="contact-section">
     <div class="contact-container">
-      
+
+      <!-- Contact Info + WhatsApp -->
+      <div class="contact-info">
+        <h2>Neem contact op</h2>
+        <p>Heb je vragen of wil je weten wat wij voor jou kunnen betekenen?
+          Neem gerust contact met ons op via telefoon, WhatsApp of e-mail.
+          Wij helpen je snel en persoonlijk verder!</p>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <p> <i class="material-icons" style="vertical-align: middle; ">call</i>
+              <strong> Telefoon:</strong><br>038 333 5333</p>
+          </div>
+          <div class="contact-card">
+            <p> <i class="material-icons" style="vertical-align: middle; ">email</i>
+              <strong> Email:</strong><br> info@placeholder.nl</p>
+          </div>
+          <div class="contact-card">
+            <p><i class="material-icons" style="vertical-align: middle; ">location_on</i>
+              <strong> Adres:</strong> Stationsstraat 25, 8011 AB Zwolle</p>
+          </div>
+          <div class="contact-card">
+            <i class="material-icons" >schedule</i>
+                <h5>Ma - Vr: 10:00 - 20:00<br>
+                Za: 10:00 - 22:00<br>
+                Zo: Gesloten</h5>
+          </div>
+        </div>
+      </div>
+
       <!-- Contact Formulier -->
       <div class="contact-form">
         <h2>Stuur ons een bericht</h2>
@@ -57,33 +84,15 @@
           <label>Bericht</label>
           <textarea name="message" rows="6" placeholder="Typ hier je bericht..." required></textarea>
 
-          <button type="submit" class="btn">Verstuur</button>
+          <button type="submit" class="btn">Verstuur bericht</button>
         </form><br><br>
 
         <p>
             <a href="https://wa.me/31685774713" target="_blank" class="whatsapp-link"> 
-                <img src="whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+                <img src="Images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
                 <strong>Stuur ons gerust een bericht via whatsapp.</strong> 
             </a>
         </p>
-      </div>
-
-      <!-- Contact Info + WhatsApp -->
-      <div class="contact-info">
-        <h2>Contactinformatie</h2>
-        <p><strong>Telefoon:</strong> 0383335333</p>
-        <p><strong>Email:</strong> info@placeholder.nl</p>
-        <br>
-        <h3>Openingstijden</h3>
-        <ul>
-          <li>Maandag – Vrijdag: 10:00 - 20:00</li>
-          <li>Zaterdag: 10:00 - 22:00</li>
-          <li>Zondag: Gesloten</li>
-        </ul>
-      </div>
-
-      <div class="contact-img">
-       <img src="logo3.png" class="contactfoto">
       </div>
     </div>
   </section>
@@ -91,19 +100,18 @@
   <!-- MAPS FULL WIDTH -->
   <section class="map-section">
     <iframe
-      src="https://www.google.com/maps?q=Schubertstraat%2018&output=embed"
+      src="https://www.google.com/maps?q=Schubertstraat+18+8031ZD+Zwolle&output=embed"
       allowfullscreen=""
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </section>
-
+  
   <footer class="footer">
     <div class="footer-container">
-      <!-- Privacybeleid -->
-      <!-- <div class="footer-column">
-        <img src="logo2.png" class="logofooter">
-      </div> -->
+      <div class="footer-column">
+        <img src="Images/logo2.png" class="logofooter">
+      </div>
   
       <!-- Openingstijden -->
       <div class="footer-column">
@@ -118,12 +126,35 @@
           <li>Zondag: Gesloten</li>
         </ul>
       </div>
+
+    <!-- Snelle links -->
+    <div class="footer-column">
+        <h3>Snelle links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="over-ons.html">Over ons</a></li>
+          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="offerte.html">Offerte</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Diensten -->
+      <div class="footer-column">
+        <h3>Diensten</h3>
+        <ul>
+          <li><a href="#">Placeholder dienst 1</a></li>
+          <li><a href="#">Placeholder dienst 2</a></li>
+          <li><a href="#">Placeholder dienst 3</a></li>
+          <li><a href="#">Placeholder dienst 4</a></li>
+        </ul>
+      </div>
   
       <!-- Socials -->
       <div class="footer-column">
         <h3>Contact</h3>
         <a href="https://wa.me/31685774713" target="_blank" class="whatsapp-link2">
-          <img src="whatsapp.png" alt="WhatsApp" class="whatsapp-icon2">
+          <img src="Images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon2">
           WhatsApp ons
         </a>
       </div>
@@ -136,53 +167,13 @@
       <p>© 2025 Mijn Website. Alle rechten voorbehouden.</p>
     </div>
   </footer>
+
     <button id="toTopBtn" title="Ga naar boven"><span class="material-symbols-outlined">
         keyboard_arrow_up
         </span>
     </button>
   
-  <script>
-    // Hamburger functionaliteit
-    const hamburger = document.querySelector('.hamburger');
-    const nav = document.querySelector('.nav');
+    <script src="script.js"></script>
 
-    hamburger.addEventListener('click', () => {
-      nav.classList.toggle('open');
-      hamburger.classList.toggle('active');
-    });
-    
-    const toTopBtn = document.getElementById("toTopBtn");
-
-    // Laat button zien bij scrollen
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-        // Als je meer dan 200px naar beneden scrollt, toon de knop
-        if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-            toTopBtn.style.display = "block";
-        } else {
-            toTopBtn.style.display = "none";
-        }
-    }
-
-    // Scroll naar boven wanneer knop wordt geklikt
-    toTopBtn.addEventListener("click", function(){
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    const links = document.querySelectorAll('.nav a');
-
-    links.forEach(link => {
-    // alleen de bestandsnaam van href vergelijken
-    const linkFile = link.getAttribute('href').split("/").pop();
-    const currentFile = window.location.pathname.split("/").pop();
-
-    if(linkFile === currentFile) {
-        link.classList.add('active');
-    } else {
-        link.classList.remove('active'); // verwijder voor de rest
-    }
-    });
-  </script>
 </body>
 </html>

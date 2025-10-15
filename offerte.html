@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Offerte aanvragen | Mijn Administratie</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Test</div>
+    
+        <!-- Hamburger -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+    
+        <!-- Navigatie -->
+        <nav class="nav" id="nav">
+          <a href="index.html" class="active">Home</a>
+          <a href="diensten.html" class="active">Diensten</a>
+          <a href="over-ons.html" class="active">Over ons</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="hero-text">
+          <!-- <img src="logo2.png" alt="Elyrae Logo" class="hero-logo"> -->
+          <h1>Offerte</h1>
+        </div>
+      </section>
+
+  <section class="contact-section">
+    <div class="contact-container">
+
+      <!-- Offerteformulier -->
+      <div class="contact-form">
+        <h2>Vraag een vrijblijvende offerte aan</h2>
+        <p>Vul onderstaand formulier in. We reageren meestal binnen 1 werkdag.</p>
+
+        <form id="offerteForm" name="offerte" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="offerte">
+          <div style="display:none;">
+            <label>Laat dit veld leeg: <input name="bot-field" /></label>
+          </div>
+
+          <input type="text" name="naam" placeholder="Naam *" required>
+          <input type="text" name="bedrijf" placeholder="Bedrijfsnaam">
+          <input type="email" name="email" placeholder="E-mailadres *" required>
+          <input type="tel" name="telefoon" placeholder="Telefoonnummer">
+
+          <select name="dienst" required>
+            <option value="">-- Kies een dienst --</option>
+            <option value="Boekhouding">Boekhouding</option>
+            <option value="Belastingaangifte">Belastingaangifte</option>
+            <option value="Salarisadministratie">Salarisadministratie</option>
+            <option value="Jaarrekening">Jaarrekening</option>
+          </select>
+
+          <textarea name="bericht" rows="5" placeholder="Bericht of toelichting..."></textarea>
+
+          <button type="submit">Versturen</button>
+        </form>
+
+        <div id="bedanktMessage" style="display:none; text-align:center; margin-top: 20px;">
+            <h1>Bedankt!</h1>
+            <p>Je aanvraag voor een offerte is succesvol verzonden.<br>
+               Wij nemen zo snel mogelijk contact met je op om de details te bespreken.</p>
+          </div>
+      </div>
+
+      <!-- Contactinformatie -->
+      <div class="contact-info">
+        <h2>Contactgegevens</h2>
+        <ul>
+          <li><strong>Email:</strong> info@mijnadministratie.nl</li>
+          <li><strong>Telefoon:</strong> 038-3335333</li>
+          <li><strong>Adres:</strong> Bethlehemkerkplein 35, 8011 PH Zwolle</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <img src="Images/logo2.png" class="logofooter">
+      </div>
+  
+      <!-- Openingstijden -->
+      <div class="footer-column">
+        <h3>Openingstijden</h3>
+        <ul class="opening-hours">
+          <li>Maandag: 09:00 - 18:00</li>
+          <li>Dinsdag: 09:00 - 18:00</li>
+          <li>Woensdag: 09:00 - 18:00</li>
+          <li>Donderdag: 09:00 - 18:00</li>
+          <li>Vrijdag: 09:00 - 18:00</li>
+          <li>Zaterdag: 10:00 - 17:00</li>
+          <li>Zondag: Gesloten</li>
+        </ul>
+      </div>
+
+          <!-- Snelle links -->
+    <div class="footer-column">
+        <h3>Snelle links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="over-ons.html">Over ons</a></li>
+          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="offerte.html" class="active">Offerte</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Diensten -->
+      <div class="footer-column">
+        <h3>Diensten</h3>
+        <ul>
+          <li><a href="#">Placeholder dienst 1</a></li>
+          <li><a href="#">Placeholder dienst 2</a></li>
+          <li><a href="#">Placeholder dienst 3</a></li>
+          <li><a href="#">Placeholder dienst 4</a></li>
+        </ul>
+      </div>
+  
+      <!-- Socials -->
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <a href="https://wa.me/31685774713" target="_blank" class="whatsapp-link2">
+          <img src="Images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon2">
+          WhatsApp ons
+        </a>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+        <ul>
+            <li><a href="privacybeleid.html">Privacybeleid</a></li>
+        </ul>
+      <p>© 2025 Mijn Website. Alle rechten voorbehouden.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
