@@ -2,9 +2,8 @@
 
 @font-face {
   font-family: 'Material Symbols Outlined';
-  src: url('./fonts/MaterialSymbolsOutlined.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
+  src: url('./fonts/MaterialSymbolsOutlined-Regular.ttf') format('truetype');
+  font-display: swap;
 }
 
 .material-symbols-outlined {
@@ -885,6 +884,32 @@ body {
 
 .faq-item.active .faq-answer {
   display: block;
+}
+
+/* Responsive */
+@media (max-width: 350px) {
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* automatische responsive kolommen */
+    gap: 40px;
+    justify-content: center; /* center de grid horizontaal */
+    align-items: start;
+    margin-top: 30px;
+  }
+
+  .contact-card {
+    color: var(--accent);
+    border-radius: 20px;
+    padding: 30px;
+    height: 200px; /* vaste hoogte voor alle cards */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centreren van icon en tekst */
+    justify-content: center; /* verticaal centreren van content */
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
 }
 
 /* Responsive */
