@@ -10,7 +10,20 @@ document.addEventListener('DOMContentLoaded', () => {
       }, index * 200);
     });
   });
-  
+
+  const grid = document.querySelector('.values-grid');
+
+  // Alleen mobiele infinite scroll
+  if (window.innerWidth <= 768 && grid) {
+    // Dupliceer de cards zodat de scroll seamless is
+    grid.innerHTML += grid.innerHTML;
+
+    // Flex column voor scroll
+    grid.style.display = 'flex';
+    grid.style.flexDirection = 'column';
+    grid.style.animation = 'scroll-up 12s linear infinite';
+  }
+
   // ===== HAMBURGER MENU =====
   const hamburger = document.querySelector('.hamburger');
   const nav = document.querySelector('.nav');
@@ -26,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const toTopBtn = document.getElementById('toTopBtn');
 
   if (toTopBtn) {
-    // Scroll event
     window.addEventListener('scroll', () => {
       if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
         toTopBtn.style.display = 'block';
@@ -35,7 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Klik op knop → smooth scroll
     toTopBtn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
@@ -58,12 +69,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const item = button.parentElement;
       const isActive = item.classList.contains('active');
 
-      // Sluit alle open items
       document.querySelectorAll('.faq-item.active').forEach(activeItem => {
         activeItem.classList.remove('active');
       });
 
-      // Alleen openen als het niet al actief was
       if (!isActive) {
         item.classList.add('active');
       }
