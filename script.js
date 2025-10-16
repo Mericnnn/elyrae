@@ -1,4 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+  const fadeClasses = ['fade-in-up', 'fade-in-down', 'fade-in-extra', 'fade-in-side'];
+
+  fadeClasses.forEach(fadeClass => {
+    const elements = document.querySelectorAll(`.${fadeClass}`);
+    elements.forEach((el, index) => {
+      setTimeout(() => {
+        el.classList.add('visible');
+      }, index * 200);
+    });
+  });
+  
   // ===== HAMBURGER MENU =====
   const hamburger = document.querySelector('.hamburger');
   const nav = document.querySelector('.nav');

@@ -3,18 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Preload en preconnect voor razendsnel font laden -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Material Symbols Outlined -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
-    
     <title>Contact</title>
-  
-    <!-- Jouw stylesheet als laatste -->
     <link rel="stylesheet" href="style.css">
   </head>
 <body>
@@ -38,7 +30,7 @@
     
   <!-- HERO / Intro -->
   <section class="hero contact-hero">
-    <div class="hero-text">
+    <div class="hero-text fade-in-down">
       <h1>Contact</h1>
     </div>
   </section>
@@ -48,7 +40,7 @@
     <div class="contact-container">
 
       <!-- Contact Info + WhatsApp -->
-      <div class="contact-info">
+      <div class="contact-info fade-in-extra">
         <h2>Neem contact op</h2>
         <p>Heb je vragen of wil je weten wat wij voor jou kunnen betekenen?
           Neem gerust contact met ons op via telefoon, WhatsApp of e-mail.
@@ -76,7 +68,7 @@
       </div>
 
       <!-- Contact Formulier -->
-      <div class="contact-form">
+      <div class="contact-form fade-in-up">
         <h2>Stuur ons een bericht</h2>
         <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact">

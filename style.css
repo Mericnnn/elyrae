@@ -110,6 +110,21 @@ body {
   text-align: center;      /* tekst centreren */
 }
 
+.hero2 {
+  position: relative;
+  width: 100%;
+  height: 750px;
+  color: var(--text);
+  margin-top: 40px; /* ruimte voor de fixed header */
+  background-image: url('Images/hero2.webp'); 
+  background-size: cover;
+  background-position: center;
+  padding-top: 45px;
+  display: flex;
+  justify-content: center; /* horizontaal centreren */
+  align-items: center;     /* verticaal centreren */
+  text-align: center;      /* tekst centreren */
+}
 /* Lichte overlay */
 .hero::before {
   content: '';
@@ -668,6 +683,10 @@ body {
     height: 220px;
   }
 
+  .hero2 {
+    height: 400px;
+  }
+
   .hero-text h1 {
     font-size: 3rem;
   }
@@ -690,6 +709,51 @@ body {
   color:var(--accent);
 }
 
+.fade-in-down {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: all 0.5s ease-out;
+}
+
+/* eindpositie */
+.fade-in-down.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.5s ease-out;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+.fade-in-extra {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s ease-out;
+}
+
+.fade-in-extra.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-side {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.5s ease-out;
+}
+
+.fade-in-side.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
 .section-title {
   text-align: center;
   margin-bottom: 30px;
@@ -917,6 +981,15 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+
+  .fade-in-up,
+  .fade-in-down,
+  .fade-in-extra,
+  .fade-in-side {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 
   .mission-vision {
     flex-direction: column;
