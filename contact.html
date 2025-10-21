@@ -72,24 +72,30 @@
       <!-- Contact Formulier -->
       <div class="contact-form fade-in-up">
         <h2>Stuur ons een bericht</h2>
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <form 
+        name="contact" 
+        method="POST" 
+        data-netlify="true" 
+        netlify-honeypot="bot-field"
+        action="/thank-you"
+      >
           <input type="hidden" name="form-name" value="contact">
           <p hidden>
-            <label>Laat dit veld leeg: <input name="bot-field"></label>
+              <label>Laat dit veld leeg: <input name="bot-field"></label>
           </p>
-
+      
           <label>Naam</label>
           <input type="text" name="name" placeholder="Je naam" required>
-
+      
           <label>Email</label>
           <input type="email" name="email" placeholder="je@email.nl" required>
-
+      
           <label>Bericht</label>
           <textarea name="message" rows="6" placeholder="Typ hier je bericht..." required></textarea>
-
+      
           <button type="submit" class="btn">Verstuur bericht</button>
-        </form><br><br>
-
+      </form><br><br>
+    
         <p>
             <a href="https://wa.me/31685774713" target="_blank" class="whatsapp-link"> 
                 <img src="Images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
