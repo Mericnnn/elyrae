@@ -44,7 +44,7 @@
         <h2>Zo werkt onze overstapservice</h2>
         <p class="intro-text">In drie eenvoudige stappen zorgen wij dat jouw administratie vlekkeloos wordt overgezet.</p>
   
-        <div class="overstap-grid">
+        <div class="overstap-grid fade-in-extra">
           <div class="overstap-card">
             <span class="material-symbols-outlined">contact_mail</span>
             <h3>1. Kennismaking & analyse</h3>
@@ -67,73 +67,173 @@
   
       <!-- CTA -->
       <section class="overstap-cta">
-        <div class="overstap-cta-content">
-          <h2>Klaar om over te stappen?</h2>
-          <p>Wij regelen het hele traject voor je — van opzegging tot migratie. Snel, veilig en persoonlijk.</p>
-          <a href="contact.html" class="overstap-cta-btn">Neem contact op</a>
+        <div class="overstap-cta-content fade-in-side">
+        <h2>Waarom klanten kiezen voor onze overstapservice</h2>
         </div>
       </section>
-
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-column">
-        <!-- <img src="Images/logo2.png" class="logofooter"> -->
-      </div>
-  
-      <!-- Openingstijden -->
-      <div class="footer-column">
-        <h3>Openingstijden</h3>
-        <ul class="opening-hours">
-          <li>Maandag: 09:00 - 18:00</li>
-          <li>Dinsdag: 09:00 - 18:00</li>
-          <li>Woensdag: 09:00 - 18:00</li>
-          <li>Donderdag: 09:00 - 18:00</li>
-          <li>Vrijdag: 09:00 - 18:00</li>
-          <li>Zaterdag: 10:00 - 17:00</li>
-          <li>Zondag: Gesloten</li>
-        </ul>
+      
+  <section class="values fade-in-side">
+    <img src="Images/hand2.webp" alt="Hero" class="faq-img" loading="eager">
+    <div class="values-grid">
+      <div class="value-card">
+        <span class="material-symbols-outlined">handshake</span>
+        <h3>Persoonlijk contact</h3>
+        <p>Je hebt altijd één vast aanspreekpunt dat alles voor je regelt van begin tot eind.</p>
       </div>
 
-          <!-- Snelle links -->
-    <div class="footer-column">
-        <h3>Snelle links</h3>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="over-ons.html">Over ons</a></li>
-          <li><a href="diensten.html">Diensten</a></li>
-          <li><a href="offerte.html">Offerte</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <div class="value-card">
+        <span class="material-symbols-outlined">verified_user</span>
+        <h3>Veilig & betrouwbaar</h3>
+        <p>Wij werken met beveiligde overdracht en zorgen dat jouw gegevens 100% vertrouwelijk blijven.</p>
       </div>
-  
-      <!-- Diensten -->
-      <div class="footer-column">
-        <h3>Diensten</h3>
-        <ul>
-          <li><a href="#">Placeholder dienst 1</a></li>
-          <li><a href="#">Placeholder dienst 2</a></li>
-          <li><a href="#">Placeholder dienst 3</a></li>
-          <li><a href="#">Placeholder dienst 4</a></li>
-        </ul>
-      </div>
-  
-      <!-- Socials -->
-      <div class="footer-column">
-        <h3>Contact</h3>
-        <a href="https://wa.me/31685774713" target="_blank" class="whatsapp-link2">
-          <img src="Images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon2">
-          WhatsApp ons
-        </a>
+
+      <div class="value-card">
+        <span class="material-symbols-outlined">bolt</span>
+        <h3>Snel geregeld</h3>
+        <p>Binnen enkele dagen is jouw administratie volledig overgezet en werk je in onze systemen.</p>
       </div>
     </div>
+  </section>
   
-    <div class="footer-bottom">
-        <ul>
-            <li><a href="privacybeleid.html">Privacybeleid</a></li>
-        </ul>
-      <p>© 2025 Mijn Website. Alle rechten voorbehouden.</p>
-    </div>
-  </footer>
+  <!-- Overstap formulier -->
+  <section class="overstap-form-section fade-in-up">
+    <h2>Klaar om zorgeloos over te stappen?</h2>
+    <p class="intro-text">
+      Laat je gegevens achter en wij nemen binnen één werkdag contact met je op om de overstap te starten.
+    </p>
+  
+    <form 
+        name="overstap-formulier" 
+        method="POST" 
+        data-netlify="true" 
+        netlify-honeypot="bot-field"
+        action="/bedankt-overstap"
+        class="overstap-form"
+    >
+        <!-- Verborgen Netlify-velden -->
+        <input type="hidden" name="form-name" value="overstap-formulier">
+        <p hidden>
+        <label>Niet invullen: <input name="bot-field" /></label>
+        </p>
+    
+        <div class="form-group">
+        <label for="name">Naam *</label>
+        <input type="text" id="name" name="name" required placeholder="Jouw naam">
+        </div>
+    
+        <div class="form-group">
+        <label for="email">E-mailadres *</label>
+        <input type="email" id="email" name="email" required placeholder="jouw@email.nl">
+        </div>
+    
+        <div class="form-group">
+        <label for="phone">Telefoonnummer *</label>
+        <input type="tel" id="phone" name="phone" required placeholder="06-12345678">
+        </div>
+    
+        <div class="form-group">
+        <label for="bedrijf">Bedrijfsnaam</label>
+        <input type="text" id="bedrijf" name="bedrijf" placeholder="Naam van je bedrijf (optioneel)">
+        </div>
+    
+        <div class="form-group">
+        <label for="message">Bericht</label>
+        <textarea id="message" name="message" rows="4" placeholder="Eventuele extra informatie..."></textarea>
+        </div>
+    
+        <button type="submit" class="form-btn">Verstuur aanvraag</button>
+  </form>  
+  </section>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-column">
+            <!-- <img src="Images/logo2.png" class="logofooter"> -->
+          </div>
+      
+          <!-- Openingstijden -->
+          <div class="footer-column">
+            <h3>Openingstijden</h3>
+            <ul class="opening-hours">
+              <li>Maandag: 09:00 - 18:00</li>
+              <li>Dinsdag: 09:00 - 18:00</li>
+              <li>Woensdag: 09:00 - 18:00</li>
+              <li>Donderdag: 09:00 - 18:00</li>
+              <li>Vrijdag: 09:00 - 18:00</li>
+              <li>Zaterdag: 10:00 - 17:00</li>
+              <li>Zondag: Gesloten</li>
+            </ul>
+          </div>
+    
+        <!-- Snelle links -->
+        <div class="footer-column">
+            <h3>Snelle links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="over-ons.html">Over ons</a></li>
+              <li><a href="diensten.html">Diensten</a></li>
+              <li><a href="offerte.html" class="active">Offerte</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+      
+          <!-- Diensten -->
+          <div class="footer-column">
+            <h3>Diensten</h3>
+            <ul>
+              <li><a href="#">Placeholder dienst 1</a></li>
+              <li><a href="#">Placeholder dienst 2</a></li>
+              <li><a href="#">Placeholder dienst 3</a></li>
+              <li><a href="#">Placeholder dienst 4</a></li>
+            </ul>
+          </div>
+      
+          <!-- Socials / Contact -->
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <ul class="footer-contact-list">
+              <!-- Telefoon -->
+              <li>
+                <a href="tel:0617073020" class="footer-contact-link">
+                  <i class="material-symbols-outlined">call</i>
+                  <span>0617073020</span>
+                </a>
+              </li>
+    
+              <!-- Email -->
+              <li>
+                <a href="mailto:info@raad-administratie.nl" class="footer-contact-link">
+                  <i class="material-symbols-outlined">email</i>
+                  <span>info@raad-administratie.nl</span>
+                </a>
+              </li>
+    
+              <!-- Adres / Maps -->
+              <li>
+                <a href="https://www.google.com/maps/search/?api=1&query=Baileystraat+2,+8013+RT,+Zwolle" target="_blank" class="footer-contact-link">
+                  <i class="material-symbols-outlined">location_on</i>
+                  <span>Baileystraat 2, 8013 RT, Zwolle</span>
+                </a>
+              </li>
+    
+              <!-- WhatsApp -->
+              <li>
+                <a href="https://wa.me/31617073020" target="_blank" class="footer-contact-link whatsapp-link2">
+                  <img src="Images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon2">
+                  <span>WhatsApp ons</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+            <ul>
+                <li><a href="privacybeleid.html">Privacybeleid</a></li>
+            </ul>
+            <p>© 2025 Raad Administratie en Advies. Alle rechten voorbehouden.</p>
+        </div>
+      </footer>
 
   <button id="toTopBtn" title="Ga naar boven"><span class="material-symbols-outlined">
     keyboard_arrow_up

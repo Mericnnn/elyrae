@@ -1,24 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
-
   const fadeClasses = ['fade-in-up', 'fade-in-down', 'fade-in-extra', 'fade-in-side'];
 
+  // ===== FADE-IN BIJ SCROLL =====
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // stop observer na zichtbaar worden
+        }
+      });
+    },
+    {
+      threshold: 0.2 // pas aan hoe vroeg het effect triggert (0.2 = 20% zichtbaar)
+    }
+  );
+
   fadeClasses.forEach(fadeClass => {
-    const elements = document.querySelectorAll(`.${fadeClass}`);
-    elements.forEach((el, index) => {
-      setTimeout(() => {
-        el.classList.add('visible');
-      }, index * 200);
+    document.querySelectorAll(`.${fadeClass}`).forEach(el => {
+      observer.observe(el);
     });
   });
 
+  // ===== MOBILE INFINITE SCROLL =====
   const grid = document.querySelector('.values-grid');
 
-  // Alleen mobiele infinite scroll
   if (window.innerWidth <= 768 && grid) {
-    // Dupliceer de cards zodat de scroll seamless is
-    grid.innerHTML += grid.innerHTML;
-
-    // Flex column voor scroll
+    grid.innerHTML += grid.innerHTML; // Dupliceer cards
     grid.style.display = 'flex';
     grid.style.flexDirection = 'column';
     grid.style.animation = 'scroll-up 12s linear infinite';

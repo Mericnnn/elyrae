@@ -109,7 +109,7 @@ body {
   text-align: center;      /* tekst centreren */
 }
 
-.hero-text h1 { font-size: 4rem; color: var(--text2); font-family: 'Playfair Display', serif; margin-bottom: 10px; font-weight: 600; } /* Hero subtitel */ .hero-text p { font-size: 1.2rem; color: var(--text); margin-bottom: 20px; }
+.hero-text h1 { font-size: 3.4rem; color: var(--text2); font-family: 'Playfair Display', serif; margin-bottom: 10px; font-weight: 600; } /* Hero subtitel */ .hero-text p { font-size: 1.2rem; color: var(--text); margin-bottom: 20px; }
 .hero2 {
   position: relative;
   width: 100%;
@@ -211,12 +211,23 @@ body {
   color: var(--text2);
   padding: 40px 60px 20px;
   font-family: "Mako", sans-serif;
+  font-size: 15px;
 }
 
 /* LOGO */
 .logofooter {
   width:150px;
   height:100px;
+}
+
+.footer-column .footer-contact-link {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* ruimte tussen icoon en tekst */
+  margin-bottom: 12px; /* verticale spacing tussen items */
+  color: #ffffff; /* pas aan naar je footer kleur */
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
 .footer-container {
@@ -265,11 +276,6 @@ body {
   width: 25px;
   height: 25px;
   filter: brightness(0) invert(1); /* maakt wit */
-  transition: transform 0.3s ease;
-}
-
-.whatsapp-link2:hover .whatsapp-icon2 {
-  transform: scale(1.2);
 }
 
 .footer-bottom {
@@ -340,6 +346,7 @@ body {
   flex-direction: column;
   align-items: center; 
   justify-content: center; 
+  text-decoration: none;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -621,8 +628,20 @@ body {
     gap: 30px;
     text-align: center;
   }
+
   .footer-column h3 {
     font-size: 1.1rem;
+  }
+
+  .footer-column .footer-contact-link {
+    flex-direction: column; /* icon en tekst onder elkaar */
+    justify-content: center; /* horizontaal centreren */
+    align-items: center; /* verticaal centreren */
+  }
+
+  .footer-column .footer-contact-link i,
+  .footer-column .footer-contact-link img {
+    margin-bottom: 5px; /* ruimte tussen icon en tekst */
   }
 
   .contact-container {
@@ -669,7 +688,6 @@ body {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-
 }
 
 /* -------------------- HAMBURGER MENU -------------------- */
@@ -777,7 +795,6 @@ body {
   /* Hero subtitel */
   .hero2 .hero-text p {
     display: none;
-
   }
   
   /* Hero button */
@@ -794,7 +811,6 @@ body {
     width: 200px;
   }
 }
-
 
 /* Algemene layout */
 .midden {
@@ -826,7 +842,6 @@ body {
   opacity: 1;
   transform: translateX(0);
 }
-
 
 .fade-in-extra {
   opacity: 0;
@@ -1250,7 +1265,8 @@ body {
 .overstap-cta {
   background: linear-gradient(135deg, #f2f2f2, #eaeaea);
   text-align: center;
-  padding: 100px 20px;
+ 
+  padding: 70px 20px;
 }
 
 .overstap-cta-content {
@@ -1259,8 +1275,8 @@ body {
 }
 
 .overstap-cta-content h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  font-size: 2.2rem;
+  font-family: 'Playfair Display', serif;
   color: #222;
 }
 
@@ -1395,7 +1411,6 @@ body {
   }
 }
 
-
 /* -------------------- PRIJZEN PAGINA -------------------- */
 .prijzen-sectie {
   font-family: "Mako", sans-serif;
@@ -1407,7 +1422,6 @@ body {
   text-align: center;
   margin-bottom: 3rem;
   color: var(--accent);
-
 }
 
 .prijzen-header h2 {
@@ -1441,7 +1455,6 @@ body {
 
 .prijs-card:hover {
   transform: translateY(-6px);
-
 }
 
 .prijs-top {
@@ -1598,6 +1611,94 @@ body {
   margin-top: 2rem;
 }
 
+.overstap-reasons {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.reason-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: rgba(180, 38, 50, 0.3) 0px 4px 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reason-card:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(180, 38, 50, 0.5) 0px 8px 16px;
+}
+
+.reason-card .material-symbols-outlined {
+  font-size: 40px;
+  color: #b42632;
+  margin-bottom: 10px;
+}
+
+.overstap-form-section {
+  padding: 80px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.overstap-form {
+  max-width: 600px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #473d31;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #b42632;
+}
+
+.form-btn {
+  background-color: var(--accent);
+  color: white;
+  padding: 14px 25px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-btn:hover {
+  background-color: var(--soft);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
 @media (max-width: 768px) {
   .prijzen-sectie {
     padding: 3rem 1rem;
@@ -1606,5 +1707,9 @@ body {
   .prijs-card {
     max-width: 95%;
     margin-inline: auto;
+  }
+
+  .reasons-grid {
+    grid-template-columns: 1fr;
   }
 }

@@ -47,26 +47,37 @@
         <p>Heb je vragen of wil je weten wat wij voor jou kunnen betekenen?
           Neem gerust contact met ons op via telefoon, WhatsApp of e-mail.
           Wij helpen je snel en persoonlijk verder!</p>
-        <div class="contact-grid">
-          <div class="contact-card">
-            <p> <i class="material-symbols-outlined" style="vertical-align: middle; ">call</i>
-              <strong> Telefoon:</strong><br>038 333 5333</p>
-          </div>
-          <div class="contact-card">
-            <p> <i class="material-symbols-outlined" style="vertical-align: middle; ">email</i>
-              <strong> Email:</strong><br> info@placeholder.nl</p>
-          </div>
-          <div class="contact-card">
-            <p><i class="material-symbols-outlined" style="vertical-align: middle; ">location_on</i>
-              <strong> Adres:</strong> Stationsstraat 25, 8011 AB Zwolle</p>
-          </div>
-          <div class="contact-card">
-            <i class="material-symbols-outlined" >schedule</i>
-                <h5>Ma - Vr: 10:00 - 20:00<br>
-                Za: 10:00 - 22:00<br>
-                Zo: Gesloten</h5>
-          </div>
-        </div>
+          <div class="contact-grid">
+            <!-- Telefoon -->
+            <a href="tel:0617073020" class="contact-card">
+              <p>
+                <i class="material-symbols-outlined" style="vertical-align: middle;">call</i>
+                <strong> Telefoon:</strong><br>0617073020
+              </p>
+            </a>
+          
+            <!-- Email -->
+            <a href="mailto:info@raad-administratie.nl" class="contact-card">
+              <p>
+                <i class="material-symbols-outlined" style="vertical-align: middle;">email</i>
+                <strong> Email:</strong><br>info@raad-administratie.nl
+              </p>
+            </a>
+          
+            <!-- Adres / Maps -->
+            <a href="https://www.google.com/maps/search/?api=1&query=Baileystraat+2,+8013+RT,+Zwolle" target="_blank" class="contact-card">
+              <p>
+                <i class="material-symbols-outlined" style="vertical-align: middle;">location_on</i>
+                <strong> Adres:</strong><br>Baileystraat 2, 8013 RT, Zwolle
+              </p>
+            </a>
+          
+            <!-- Openingstijden -->
+            <div class="contact-card">
+              <i class="material-symbols-outlined">schedule</i>
+              <h5>Ma - Vr: 10:00 - 20:00<br>Za: 10:00 - 22:00<br>Zo: Gesloten</h5>
+            </div>
+          </div>          
       </div>
 
       <!-- Contact Formulier -->
@@ -97,7 +108,7 @@
       </form><br><br>
     
         <p>
-            <a href="https://wa.me/31685774713" target="_blank" class="whatsapp-link"> 
+            <a href="https://wa.me/31617073020" target="_blank" class="whatsapp-link"> 
                 <img src="Images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
                 <strong>Stuur ons gerust een bericht via whatsapp.</strong> 
             </a>
@@ -109,7 +120,7 @@
   <!-- MAPS FULL WIDTH -->
   <section class="map-section">
     <iframe
-      src="https://www.google.com/maps?q=Schubertstraat+18+8031ZD+Zwolle&output=embed"
+      src="https://www.google.com/maps?q=Baileystraat+2+8013RT+Zwolle&output=embed"
       allowfullscreen=""
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade">
@@ -143,7 +154,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="over-ons.html">Over ons</a></li>
           <li><a href="diensten.html">Diensten</a></li>
-          <li><a href="offerte.html">Offerte</a></li>
+          <li><a href="offerte.html" class="active">Offerte</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -159,13 +170,42 @@
         </ul>
       </div>
   
-      <!-- Socials -->
+      <!-- Socials / Contact -->
       <div class="footer-column">
         <h3>Contact</h3>
-        <a href="https://wa.me/31685774713" target="_blank" class="whatsapp-link2">
-          <img src="Images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon2">
-          WhatsApp ons
-        </a>
+        <ul class="footer-contact-list">
+          <!-- Telefoon -->
+          <li>
+            <a href="tel:0617073020" class="footer-contact-link">
+              <i class="material-symbols-outlined">call</i>
+              <span>0617073020</span>
+            </a>
+          </li>
+
+          <!-- Email -->
+          <li>
+            <a href="mailto:info@raad-administratie.nl" class="footer-contact-link">
+              <i class="material-symbols-outlined">email</i>
+              <span>info@raad-administratie.nl</span>
+            </a>
+          </li>
+
+          <!-- Adres / Maps -->
+          <li>
+            <a href="https://www.google.com/maps/search/?api=1&query=Baileystraat+2,+8013+RT,+Zwolle" target="_blank" class="footer-contact-link">
+              <i class="material-symbols-outlined">location_on</i>
+              <span>Baileystraat 2, 8013 RT, Zwolle</span>
+            </a>
+          </li>
+
+          <!-- WhatsApp -->
+          <li>
+            <a href="https://wa.me/31617073020" target="_blank" class="footer-contact-link whatsapp-link2">
+              <img src="Images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon2">
+              <span>WhatsApp ons</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   
@@ -173,7 +213,7 @@
         <ul>
             <li><a href="privacybeleid.html">Privacybeleid</a></li>
         </ul>
-      <p>© 2025 Mijn Website. Alle rechten voorbehouden.</p>
+        <p>© 2025 Raad Administratie en Advies. Alle rechten voorbehouden.</p>
     </div>
   </footer>
 
