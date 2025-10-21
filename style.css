@@ -164,7 +164,6 @@ body {
   background-color: var(--soft);
 }
 
-
 /* -------------------- FEATURED -------------------- */
 .featured {
   text-align: center;
@@ -353,7 +352,6 @@ body {
   font-family: "Mako", sans-serif;
   font-size: 1rem;
   color: var(--accent);
-  background-color: var(--text);
   border-radius: 10px;
   outline: none;
   transition: 0.3s ease;
@@ -1181,6 +1179,112 @@ body {
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
+/* STAPPEN */
+.overstap-steps {
+  text-align: center;
+  padding: 80px 20px;
+  background: #fff;
+}
+
+.overstap-steps h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.overstap-steps .intro-text {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #555;
+}
+
+.overstap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.overstap-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: rgba(71, 61, 49, 0.4) 0px 5px, rgba(88, 73, 59, 0.3) 0px 10px, rgba(136, 99, 69, 0.2) 0px 15px, rgba(170, 135, 94, 0.1) 0px 20px, rgba(211, 167, 130, 0.05) 0px 25px;
+  padding: 25px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.overstap-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+  rgba(71, 61, 49, 0.4) -5px 5px, 
+  rgba(88, 73, 59, 0.3) -10px 10px, 
+  rgba(136, 99, 69, 0.2) -15px 15px, 
+  rgba(170, 135, 94, 0.1) -20px 20px, 
+  rgba(211, 167, 130, 0.05) -25px 25px;
+}
+
+.overstap-card span {
+  background-color: var(--footer);
+  color: white;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 32px;
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+
+.overstap-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.overstap-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* overstap */
+.overstap-cta {
+  background: linear-gradient(135deg, #f2f2f2, #eaeaea);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.overstap-cta-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.overstap-cta-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.overstap-cta-content p {
+  color: #555;
+  margin-bottom: 25px;
+  font-size: 1.05rem;
+}
+
+.overstap-cta-btn {
+  background: #222;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.overstap-cta-btn:hover {
+  background: var(--soft);
+  transform: translateY(-2px);
+}
+
 /* Responsief voor mobiel */
 @media (max-width: 768px) {
   .cta {
@@ -1288,5 +1392,219 @@ body {
 
   .about-left {
     flex:0;
+  }
+}
+
+
+/* -------------------- PRIJZEN PAGINA -------------------- */
+.prijzen-sectie {
+  font-family: "Mako", sans-serif;
+  color: var(--accent);
+  padding: 5rem 4rem;
+}
+
+.prijzen-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--accent);
+
+}
+
+.prijzen-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.prijzen-header p {
+  max-width: 650px;
+  margin: 1rem auto 0;
+  line-height: 1.6;
+}
+
+.prijzen-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-bottom: 4rem;
+}
+
+.prijs-card {
+  border: 1px solid #e4e1de;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prijs-card:hover {
+  transform: translateY(-6px);
+
+}
+
+.prijs-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.prijs-top h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.prijs-top p {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.prijs-bedrag {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--footer);
+}
+
+.prijs-bedrag span {
+  font-size: 1rem;
+  color: #8b8682;
+}
+
+.prijs-card ul {
+  margin-top: 1.5rem;
+  color: #555;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  padding-left: 1rem;
+  flex-grow: 1;
+}
+
+.prijs-card ul li {
+  margin-bottom: 0.5rem;
+}
+
+.prijs-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  text-align: center;
+  background-color: var(--accent);
+  color: #fff;
+  padding: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.prijs-btn:hover {
+  background-color: var(--footer);
+}
+
+.prijs-highlight-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  text-align: center;
+  background-color: var(--soft);
+  color: #fff;
+  padding: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.prijs-highlight-btn:hover {
+  background-color: var(--footer);
+}
+
+.highlight {
+  background: linear-gradient(to bottom, #fff, #f9f6f4);
+  transform: scale(1.02);
+  box-shadow: 
+  rgba(71, 61, 49, 0.4) -5px 5px, 
+  rgba(88, 73, 59, 0.3) -10px 10px, 
+  rgba(136, 99, 69, 0.2) -15px 15px, 
+  rgba(170, 135, 94, 0.1) -20px 20px, 
+  rgba(211, 167, 130, 0.05) -25px 25px;
+}
+
+.prijzen-extra {
+  background: #fff;
+  border: 1px solid #e7e3df;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 14px;
+  margin-bottom: 3rem;
+}
+
+.prijzen-extra h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.prijzen-extra p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.offerte-btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border: 1px solid var(--footer);
+  color: var(--footer);
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.offerte-btn:hover {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.prijzen-info {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 2rem;
+}
+
+.info-blok {
+  background: var(--accent);
+  border-radius: 1rem;
+  padding: 1.2rem;
+  box-shadow: rgba(0, 0, 0, 0.03) 0px 2px 8px;
+}
+
+.info-blok h5 {
+  color: var(--text2);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-blok p,
+.info-blok ul {
+  color: #bab4af;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.prijzen-footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .prijzen-sectie {
+    padding: 3rem 1rem;
+  }
+
+  .prijs-card {
+    max-width: 95%;
+    margin-inline: auto;
   }
 }

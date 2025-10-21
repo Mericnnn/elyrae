@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+    <title>Pakket aanvraag</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+    <header class="header">
+        <div class="logo">Test</div>
+    
+        <!-- Hamburger -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+    
+        <!-- Navigatie -->
+        <nav class="nav" id="nav">
+          <a href="index.html" class="active">Home</a>
+          <a href="diensten.html" class="active">Diensten</a>
+          <a href="prijzen.html" class="active">Prijzen</a>
+          <a href="overstapservice.html" class="active">Overstapservice</a>
+          <a href="over-ons.html" class="active">Over ons</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="hero-text">
+          <!-- <img src="logo2.png" alt="Elyrae Logo" class="hero-logo"> -->
+          <h1>Pakket aanvraag</h1>
+        </div>
+      </section>
+
+  <section class="contact-section">
+    <div class="contact-container">
+
+      <!-- Offerteformulier -->
+      <div class="contact-form">
+
+        <form 
+            id="pakket-aanvraag-form"
+            name="pakket-aanvraag" 
+            method="POST" 
+            data-netlify="true" 
+            netlify-honeypot="bot-field"
+            class="max-w-xl mx-auto p-6 bg-white rounded-2xl shadow-md space-y-4"
+        >
+            <!-- Hidden Netlify field -->
+            <input type="hidden" name="form-name" value="pakket-aanvraag">
+            <div style="display:none;">
+                <label>Laat dit veld leeg: <input name="bot-field" /></label>
+            </div>
+
+            <h2 class="text-2xl font-semibold text-accent mb-4">Vraag je pakket aan</h2>
+
+            <!-- Pakket keuze -->
+            <label class="block text-accent font-medium">Kies je pakket:</label>
+            <select name="pakket" required class="w-full p-3 rounded-lg border border-accent focus:outline-none focus:ring-2 focus:ring-accent">
+                <option value="">-- Kies een pakket --</option>
+                <option value="Brons">🥉 Brons - €69/mnd</option>
+                <option value="Zilver">🥈 Zilver - €100/mnd</option>
+                <option value="Goud">🥇 Goud - €129/mnd</option>
+            </select>
+
+            <label class="block text-accent font-medium">Bedrijfsnaam:</label>
+            <input type="text" name="bedrijf">
+           
+            <label class="block text-accent font-medium">Telefoonnummer:</label>
+            <input type="tel" name="telefoon">
+
+            <!-- Naam -->
+            <label class="block text-accent font-medium">Naam:</label>
+            <input type="text" name="naam" >
+
+            <!-- Email -->
+            <label class="block text-accent font-medium">E-mail:</label>
+            <input type="email" name="email" required>
+
+            <!-- Bericht -->
+            <label class="block text-accent font-medium">Bericht (optioneel):</label>
+            <textarea name="bericht" rows="4" class="w-full p-3 rounded-lg border border-accent focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
+
+            <!-- Submit -->
+            <button type="submit" class="w-full py-3 bg-accent text-white font-semibold rounded-lg hover:bg-soft transition">
+                Pakket aanvragen
+            </button>
+        </form>
+
+
+        <div id="bedanktMessage" style="display:none; text-align:center; margin-top: 20px;">
+            <h1>Bedankt!</h1>
+            <p>Je aanvraag voor een offerte is succesvol verzonden.<br>
+               Wij nemen zo snel mogelijk contact met je op om de details te bespreken.</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+         <!-- Kernwaarden -->
+         <section class="values fade-in-side">
+            <img src="Images/hand2.webp" alt="Hero" class="faq-img" loading="eager">
+            <div class="values-grid">
+              <div class="value-card">
+                <span class="material-symbols-outlined">verified</span>
+                <h3>Betrouwbaarheid</h3>
+                <p>Wij staan voor nauwkeurigheid en zorgvuldigheid in elk detail van onze dienstverlening.</p>
+              </div>
+      
+              <div class="value-card">
+                <span class="material-symbols-outlined">handshake</span>
+                <h3>Persoonlijk Contact</h3>
+                <p>Wij kennen onze klanten écht. Korte lijnen en persoonlijk advies maken het verschil.</p>
+              </div>
+      
+              <div class="value-card">
+                <span class="material-symbols-outlined">lightbulb</span>
+                <h3>Transparantie</h3>
+                <p>Wij geloven in open communicatie en duidelijke rapportages zonder verrassingen achteraf.</p>
+              </div>
+            </div>
+          </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <!-- <img src="Images/logo2.png" class="logofooter"> -->
+      </div>
+  
+      <!-- Openingstijden -->
+      <div class="footer-column">
+        <h3>Openingstijden</h3>
+        <ul class="opening-hours">
+          <li>Maandag: 09:00 - 18:00</li>
+          <li>Dinsdag: 09:00 - 18:00</li>
+          <li>Woensdag: 09:00 - 18:00</li>
+          <li>Donderdag: 09:00 - 18:00</li>
+          <li>Vrijdag: 09:00 - 18:00</li>
+          <li>Zaterdag: 10:00 - 17:00</li>
+          <li>Zondag: Gesloten</li>
+        </ul>
+      </div>
+
+          <!-- Snelle links -->
+    <div class="footer-column">
+        <h3>Snelle links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="over-ons.html">Over ons</a></li>
+          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="offerte.html" class="active">Offerte</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Diensten -->
+      <div class="footer-column">
+        <h3>Diensten</h3>
+        <ul>
+          <li><a href="#">Placeholder dienst 1</a></li>
+          <li><a href="#">Placeholder dienst 2</a></li>
+          <li><a href="#">Placeholder dienst 3</a></li>
+          <li><a href="#">Placeholder dienst 4</a></li>
+        </ul>
+      </div>
+  
+      <!-- Socials -->
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <a href="https://wa.me/31685774713" target="_blank" class="whatsapp-link2">
+          <img src="Images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon2">
+          WhatsApp ons
+        </a>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+        <ul>
+            <li><a href="privacybeleid.html">Privacybeleid</a></li>
+        </ul>
+      <p>© 2025 Mijn Website. Alle rechten voorbehouden.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
