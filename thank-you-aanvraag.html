@@ -10,36 +10,69 @@
     <link rel="stylesheet" href="style.css">
   </head>
 <body>
-    <div class="klein">
-        <a href="tel:0617073020" class="footer-contact-link">
-          <i class="material-symbols-outlined">call</i>
-          <span>0617073020</span>
-        </a>
-        <a href="mailto:info@raad-administratie.nl" class="footer-contact-link">
-          <i class="material-symbols-outlined">email</i>
-          <span>info@raad-administratie.nl</span>
-        </a>
-      </div>
+  <div class="klein">
+    <div class="left-links">
+      <a href="tel:0617073020">
+        <i class="material-symbols-outlined">call</i>
+        <span>0617073020</span>
+      </a>
+      <a href="mailto:info@raad-administratie.nl">
+        <i class="material-symbols-outlined">email</i>
+        <span>info@raad-administratie.nl</span>
+      </a>
+    </div>
+    <div class="right-links">
+      <a href="https://wa.me/0617073020" target="_blank">
+        <i class="material-symbols-outlined">chat</i>
+        <span>WhatsApp</span>
+      </a>
+      <a href="https://start.exactonline.nl" target="_blank">
+        <i class="material-symbols-outlined">inventory_2</i>
+        <span>Exact Online</span>
+      </a>
+      <a href="https://klantportaal.nextens.nl/login" target="_blank">
+        <i class="material-symbols-outlined">person</i>
+        <span>Klantportaal</span>
+      </a>
+    </div>
+  </div>
+  
   <header class="header">
     <div class="logo">
-      <img src="Images/raadlogo.webp" alt="RAAD Logo" style="width:100%; height:auto;">
+      <a href="index.html">
+        <img src="Images/raadlogo.webp" alt="RAAD Logo" style="width:100%; height:auto;">
+      </a>
     </div>
-
+  
     <!-- Hamburger -->
     <div class="hamburger" id="hamburger">
       <span></span>
       <span></span>
       <span></span>
     </div>
-
+  
     <!-- Navigatie -->
     <nav class="nav" id="nav">
       <a href="index.html" class="active">Home</a>
-      <a href="diensten.html" class="active">Diensten</a>
       <a href="overstapservice.html" class="active">Overstapservice</a>
+      
+        <!-- Dropdown Diensten -->
+        <div class="dropdown">
+          <a href="#" class="dropbtn">Diensten</a>
+          <div class="dropdown-content">
+            <a href="#">Boekhouding</a>
+            <a href="#">Belastingaangifte</a>
+            <a href="#">Salarisadministratie</a>
+            <a href="#">Jaarrekening</a>
+            <a href="#">Financieel Advies</a>
+            <a href="#">Startersbegeleiding</a>
+          </div>
+        </div>
+
       <a href="contact.html" class="active">Contact</a>
     </nav>
   </header>
+  <div class="overlay"></div>
 
   <section class="hero">
     <div class="hero-text">
