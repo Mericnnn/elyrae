@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
     <title>Raad Administratie & Advies</title>
+    <link rel="icon" type="image/webp" href="Images/raadlogo.webp">
     <link rel="stylesheet" href="style.css">
   </head>
 <body>
@@ -21,7 +22,9 @@
         <span>info@raad-administratie.nl</span>
       </a>
     </div>
-    <div class="right-links">
+  
+    <!-- Alleen op desktop zichtbaar -->
+    <div class="right-links desktop-only">
       <a href="https://wa.me/0617073020" target="_blank">
         <i class="material-symbols-outlined">chat</i>
         <span>WhatsApp</span>
@@ -54,50 +57,87 @@
     <!-- Navigatie -->
     <nav class="nav" id="nav">
       <a href="index.html" class="active">Home</a>
-      <a href="overstapservice.html" class="active">Overstapservice</a>
-      
-        <!-- Dropdown Diensten -->
-        <div class="dropdown">
-          <a href="#" class="dropbtn">Diensten</a>
-          <div class="dropdown-content">
-            <a href="#">Boekhouding</a>
-            <a href="#">Belastingaangifte</a>
-            <a href="#">Salarisadministratie</a>
-            <a href="#">Jaarrekening</a>
-            <a href="#">Financieel Advies</a>
-            <a href="#">Startersbegeleiding</a>
-          </div>
+      <a href="overstapservice.html">Overstapservice</a>
+  
+      <!-- Dropdown Diensten -->
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Diensten</a>
+        <div class="dropdown-content">
+          <a href="boekhouding.html">Boekhouding</a>
+          <a href="belastingaangifte.html">Belastingaangifte</a>
+          <a href="salarisadministratie.html">Salarisadministratie</a>
+          <a href="jaarrekening.html">Jaarrekening</a>
+          <a href="#">Financieel Advies</a>
+          <a href="#">Startersbegeleiding</a>
         </div>
-
-      <a href="contact.html" class="active">Contact</a>
+      </div>
+  
+      <a href="contact.html">Contact</a>
+  
+      <!-- Extra mobiele links -->
+      <div class="mobile-links">
+        <a href="https://wa.me/0617073020" target="_blank">
+          <i class="material-symbols-outlined">chat</i>
+          <span>WhatsApp</span>
+        </a>
+        <a href="https://start.exactonline.nl" target="_blank">
+          <i class="material-symbols-outlined">inventory_2</i>
+          <span>Exact Online</span>
+        </a>
+        <a href="https://klantportaal.nextens.nl/login" target="_blank">
+          <i class="material-symbols-outlined">person</i>
+          <span>Klantportaal</span>
+        </a>
+      </div>
     </nav>
   </header>
+  
   <div class="overlay"></div>
 
   <section class="hero2">
     <img src="Images/hero5.webp" alt="Hero" class="hero-img" loading="eager">
     <div class="hero-overlay"></div>
     <div class="hero-text">
-      <h1>Raad Administratie & Advies</h1>
-      <p>Placeholder, placeholder, placeholder</p><br>
-      <a href="diensten.html" class="btn">kennismakingsgesprek</a>
+      <h1>RAAD Administratie & Advies</h1>
+      <p>Meer overzicht, minder zorgen.</p><br>
+      <a href="offerte.html" class="btn">Offerte</a>
     </div>
   </section>
   
-  <section class="cta">
-    <div class="cta-container">
-      <h2>Laten we samenwerken</h2>
-      <p>Klaar om jouw administratie te professionaliseren? Neem contact op of vraag direct een offerte aan!</p>
-      <a href="offerte.html" class="cta-btn">Offerte aanvragen</a>
+  
+  <section class="overstap-cta">
+    <div class="overstap-cta-content fade-in-side">
+    <h2>Waarom RAAD Administratie & Advies?</h2>
     </div>
-  
-    <!-- Afbeelding binnen de sectie, maar half erboven -->
-    <img src="Images/hero4.webp" alt="Samenwerken" class="cta-img" loading="eager">
   </section>
+
+       <!-- Kernwaarden -->
+       <section class="values">
+        <img src="Images/hand2.webp" alt="Hero" class="faq-img" loading="eager">
+        <div class="values-grid ">
+          <div class="value-card">
+            <span class="material-symbols-outlined fade-in-side">verified</span>
+            <h3>Betrouwbaarheid</h3>
+            <p>Wij staan voor nauwkeurigheid en zorgvuldigheid in elk detail van onze dienstverlening.</p>
+          </div>
   
+          <div class="value-card ">
+            <span class="material-symbols-outlined  fade-in-side">handshake</span>
+            <h3>Persoonlijk Contact</h3>
+            <p>Wij kennen onze klanten écht. Korte lijnen en persoonlijk advies maken het verschil.</p>
+          </div>
+  
+          <div class="value-card">
+            <span class="material-symbols-outlined  fade-in-side">lightbulb</span>
+            <h3>Transparantie</h3>
+            <p>Wij geloven in open communicatie en duidelijke rapportages zonder verrassingen achteraf.</p>
+          </div>
+        </div>
+      </section>
+
   <section class="diensten">
     <h2>Onze Diensten</h2>
-    <div class="diensten-grid">
+    <div class="diensten-grid fade-in-extra">
   
       <div class="dienst-card">
         <span class="material-symbols-outlined dienst-icon">receipt_long</span>
@@ -152,33 +192,44 @@
           <a href="starters.html" class="dienst-btn">Lees meer</a>
         </div>
       </div>
-  
+
     </div>
   </section>
 
-       <!-- Kernwaarden -->
-       <section class="values fade-in-side">
-        <img src="Images/hand2.webp" alt="Hero" class="faq-img" loading="eager">
-        <div class="values-grid">
-          <div class="value-card">
-            <span class="material-symbols-outlined">verified</span>
-            <h3>Betrouwbaarheid</h3>
-            <p>Wij staan voor nauwkeurigheid en zorgvuldigheid in elk detail van onze dienstverlening.</p>
-          </div>
-  
-          <div class="value-card">
-            <span class="material-symbols-outlined">handshake</span>
-            <h3>Persoonlijk Contact</h3>
-            <p>Wij kennen onze klanten écht. Korte lijnen en persoonlijk advies maken het verschil.</p>
-          </div>
-  
-          <div class="value-card">
-            <span class="material-symbols-outlined">lightbulb</span>
-            <h3>Transparantie</h3>
-            <p>Wij geloven in open communicatie en duidelijke rapportages zonder verrassingen achteraf.</p>
-          </div>
+      <section class="cta">
+        <div class="cta-container">
+          <h2>Laten we samenwerken</h2>
+          <p>Klaar om jouw administratie te professionaliseren? Neem contact op of vraag direct een offerte aan!</p>
+          <a href="offerte.html" class="cta-btn">Offerte aanvragen</a>
         </div>
+      
+        <!-- Afbeelding binnen de sectie, maar half erboven -->
+        <img src="Images/hero4.webp" alt="Samenwerken" class="cta-img" loading="eager">
       </section>
+
+    <!-- Overstappen Sectie -->
+    <section class="overstap-home fade-in-down">
+      <div class="overstap-content">
+        <h2>Overstappen naar RAAD Administratie & Advies</h2>
+        <p>
+          Overstappen hoeft niet ingewikkeld te zijn. Wij nemen contact op met je
+          huidige administratie en zorgen dat alle gegevens veilig en zorgvuldig
+          worden overgezet. Jij hoeft alleen nog maar te profiteren van onze
+          persoonlijke service en heldere werkwijze.
+        </p>
+        <a href="overstapservice.html" class="btn-overstap">Ontdek de overstapservice</a>
+      </div>
+    </section>
+    
+  <!-- MAPS FULL WIDTH -->
+  <section class="map-section">
+    <iframe
+      src="https://www.google.com/maps?q=Baileystraat+2+8013RT+Zwolle&output=embed"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
   
       <footer class="footer">
         <div class="footer-container">
@@ -265,7 +316,7 @@
             <ul>
                 <li><a href="privacybeleid.html">Privacybeleid</a></li>
             </ul>
-            <p>© 2025 Raad Administratie & Advies. Alle rechten voorbehouden.</p>
+            <p>© 2025 RAAD Administratie & Advies. Alle rechten voorbehouden.</p>
         </div>
       </footer>
 

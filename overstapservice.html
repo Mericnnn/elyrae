@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
     <title>Gratis Overstapservice - Raad Administratie & Advies</title>
+    <link rel="icon" type="image/webp" href="Images/raadlogo.webp">
     <link rel="stylesheet" href="style.css">
   </head>
 <body>
@@ -60,10 +61,10 @@
         <div class="dropdown">
           <a href="#" class="dropbtn">Diensten</a>
           <div class="dropdown-content">
-            <a href="#">Boekhouding</a>
-            <a href="#">Belastingaangifte</a>
-            <a href="#">Salarisadministratie</a>
-            <a href="#">Jaarrekening</a>
+            <a href="boekhouding.html">Boekhouding</a>
+            <a href="belastingaangifte.html">Belastingaangifte</a>
+            <a href="salarisadministratie.html">Salarisadministratie</a>
+            <a href="jaarrekening.html">Jaarrekening</a>
             <a href="#">Financieel Advies</a>
             <a href="#">Startersbegeleiding</a>
           </div>
@@ -74,39 +75,94 @@
   </header>
   <div class="overlay"></div>
 
-
   <section class="hero">
     <div class="hero-text">
       <h1>Overstapservice</h1>
     </div>
   </section>
 
-
-    <!-- STAPPEN -->
-    <section class="overstap-steps">
-        <h2>Zo werkt onze overstapservice</h2>
-        <p class="intro-text">In drie eenvoudige stappen zorgen wij dat jouw administratie vlekkeloos wordt overgezet.</p>
-  
-        <div class="overstap-grid fade-in-extra">
-          <div class="overstap-card">
-            <span class="material-symbols-outlined">contact_mail</span>
-            <h3>1. Kennismaking & analyse</h3>
-            <p>We bespreken jouw huidige situatie en wat je wilt verbeteren. Daarna maken we een persoonlijk overstapplan.</p>
+<!-- Hero -->
+<section class="hero-overstap">
+  <div class="hero-container">
+    <div class="overstap-text">
+      <h1>Stap moeiteloos over — wij regelen alles voor jou</h1>
+      <p>Maak <strong>gratis</strong> gebruik van onze overstapservice en laat ons jouw administratie vlekkeloos overzetten. Volledige ontzorging, één vast aanspreekpunt.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-primary">Gratis overstappen</a>
+        <a href="#meer-info" class="btn-secondary">Meer informatie</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="card-grid">
+        <div class="card-row">
+          <div>
+            <div class="card-label">Status</div>
+            <div class="card-text">Klaar om over te stappen</div>
           </div>
-  
-          <div class="overstap-card">
-            <span class="material-symbols-outlined">swap_horiz</span>
-            <h3>2. Overdracht van gegevens</h3>
-            <p>Wij nemen contact op met je vorige boekhouder en zorgen voor een nette, veilige gegevensoverdracht.</p>
-          </div>
-  
-          <div class="overstap-card">
-            <span class="material-symbols-outlined">done_all</span>
-            <h3>3. Administratie ingericht</h3>
-            <p>Jouw administratie staat volledig klaar in onze systemen — je kunt meteen aan de slag met onze app.</p>
-          </div>
+          <div class="card-note">Gratis</div>
         </div>
-      </section>
+        <div class="card-row">
+          <div>
+            <div class="card-label">Contact</div>
+            <div class="card-text">Eén vast aanspreekpunt</div>
+          </div>
+          <div class="card-note">Binnen 1 werkdag</div>
+        </div>
+        <div class="card-row note-text">Direct starten? Klik op "Gratis overstappen".</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Volledig ontzorgd -->
+<section id="meer-info" class="ontzorgd-section">
+  <h2>Volledig ontzorgd, van begin tot eind</h2>
+  <div class="ontzorgd-grid">
+    <article class="ontzorgd-card">
+      <div class="card-header">
+        <span class="material-symbols-outlined">call</span>
+        <h3>Contact met je huidige kantoor</h3>
+      </div>
+      <p>Wij nemen contact op en vragen alle benodigde administratieve stukken op zodat jij er geen omkijken naar hebt.</p>
+    </article>
+
+    <article class="ontzorgd-card">
+      <div class="card-header">
+        <span class="material-symbols-outlined">layers</span>
+        <h3>Inrichting administratie</h3>
+      </div>
+      <p>Professionele en overzichtelijke inrichting van je administratie in ons systeem.</p>
+    </article>
+
+    <article class="ontzorgd-card">
+      <div class="card-header">
+        <span class="material-symbols-outlined">credit_card</span>
+        <h3>Koppeling bank</h3>
+      </div>
+      <p>Automatische transacties en realtime overzicht van je cashflow.</p>
+    </article>
+
+    <article class="ontzorgd-card">
+      <div class="card-header">
+        <span class="material-symbols-outlined">smartphone</span>
+        <h3>App instellen</h3>
+      </div>
+      <p>We helpen je snel op weg met de boekhoud-app — bonnetjes uploaden, facturen versturen en meer.</p>
+    </article>
+
+    <article class="ontzorgd-card">
+      <div class="card-header">
+        <span class="material-symbols-outlined">groups</span>
+        <h3>Kennismakingsgesprek</h3>
+      </div>
+      <p>We bespreken jouw wensen zodat de administratie aansluit op jouw bedrijfsvoering.</p>
+    </article>
+
+    <div class="ontzorgd-note">
+      <strong>Helemaal gratis</strong> — geen kosten, geen verplichtingen, geen gedoe.
+    </div>
+  </div>
+</section>
   
       <!-- CTA -->
       <section class="overstap-cta">
@@ -115,23 +171,23 @@
         </div>
       </section>
       
-  <section class="values fade-in-side">
+  <section class="values">
     <img src="Images/hand2.webp" alt="Hero" class="faq-img" loading="eager">
     <div class="values-grid">
       <div class="value-card">
-        <span class="material-symbols-outlined">handshake</span>
+        <span class="material-symbols-outlined fade-in-side">handshake</span>
         <h3>Persoonlijk contact</h3>
         <p>Je hebt altijd één vast aanspreekpunt dat alles voor je regelt van begin tot eind.</p>
       </div>
 
       <div class="value-card">
-        <span class="material-symbols-outlined">verified_user</span>
+        <span class="material-symbols-outlined fade-in-side">verified_user</span>
         <h3>Veilig & betrouwbaar</h3>
         <p>Wij werken met beveiligde overdracht en zorgen dat jouw gegevens 100% vertrouwelijk blijven.</p>
       </div>
 
       <div class="value-card">
-        <span class="material-symbols-outlined">bolt</span>
+        <span class="material-symbols-outlined  fade-in-side">bolt</span>
         <h3>Snel geregeld</h3>
         <p>Binnen enkele dagen is jouw administratie volledig overgezet en werk je in onze systemen.</p>
       </div>
@@ -139,7 +195,7 @@
   </section>
   
   <!-- Overstap formulier -->
-  <section class="overstap-form-section fade-in-up">
+  <section id="contact" class="overstap-form-section fade-in-up">
     <h2>Klaar om zorgeloos over te stappen?</h2>
     <p class="intro-text">
       Laat je gegevens achter en wij nemen binnen één werkdag contact met je op om de overstap te starten.
@@ -273,7 +329,7 @@
             <ul>
                 <li><a href="privacybeleid.html">Privacybeleid</a></li>
             </ul>
-            <p>© 2025 Raad Administratie & Advies. Alle rechten voorbehouden.</p>
+            <p>© 2025 RAAD Administratie & Advies. Alle rechten voorbehouden.</p>
         </div>
       </footer>
 

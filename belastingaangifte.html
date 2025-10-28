@@ -6,10 +6,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
-    <title>Diensten</title>
+    <title>Diensten - Belastingaangifte</title>
+    <link rel="icon" type="image/webp" href="Images/raadlogo.webp">
     <link rel="stylesheet" href="style.css">
   </head>
 <body>
+
   <div class="klein">
     <div class="left-links">
       <a href="tel:0617073020">
@@ -44,31 +46,26 @@
       </a>
     </div>
   
-    <!-- Hamburger -->
     <div class="hamburger" id="hamburger">
       <span></span>
       <span></span>
       <span></span>
     </div>
   
-    <!-- Navigatie -->
     <nav class="nav" id="nav">
       <a href="index.html" class="active">Home</a>
       <a href="overstapservice.html" class="active">Overstapservice</a>
-      
-        <!-- Dropdown Diensten -->
-        <div class="dropdown">
-          <a href="#" class="dropbtn">Diensten</a>
-          <div class="dropdown-content">
-            <a href="#">Boekhouding</a>
-            <a href="#">Belastingaangifte</a>
-            <a href="#">Salarisadministratie</a>
-            <a href="#">Jaarrekening</a>
-            <a href="#">Financieel Advies</a>
-            <a href="#">Startersbegeleiding</a>
-          </div>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Diensten</a>
+        <div class="dropdown-content">
+          <a href="boekhouding.html">Boekhouding</a>
+          <a href="belastingaangifte.html">Belastingaangifte</a>
+          <a href="salarisadministratie.html">Salarisadministratie</a>
+          <a href="jaarrekening.html">Jaarrekening</a>
+          <a href="#">Financieel Advies</a>
+          <a href="#">Startersbegeleiding</a>
         </div>
-
+      </div>
       <a href="contact.html" class="active">Contact</a>
     </nav>
   </header>
@@ -76,14 +73,47 @@
 
   <section class="hero">
     <div class="hero-text">
-      <h1>Bedankt!</h1>
+      <h1>Belastingaangifte</h1>
     </div>
   </section>
   
-  <h2>Offerte ontvangen!</h2>
-  <p>Bedankt voor je aanvraag. We bekijken je verzoek en sturen binnen 24 uur een offerte naar je e-mailadres.</p>
-  <p>Heb je vragen? Neem gerust contact met ons op via telefoon of e-mail.</p>
-  <a href="/" class="btn">Terug naar home</a>  
+  <section class="belastingaangifte">
+    <p>Advies en ontzorging bij fiscale vraagstukken</p>
+  
+    <p>Nederland kent veel verschillende belastingen, en elke ondernemer krijgt vroeg of laat te maken met de Belastingdienst. Omdat wet- en regelgeving regelmatig verandert, is het lastig om alles zelf bij te houden. Daarom is deskundig belastingadvies onmisbaar voor iedere onderneming. Wij helpen je graag met helder advies en volledige ontzorging.</p>
+  
+    <h2>Fiscaliteit als onderdeel van je administratie</h2>
+    <p>Voor ondernemers, zzp’ers en freelancers speelt de Belastingdienst een belangrijke rol bij financiële beslissingen. Fiscaliteit is daarom onlosmakelijk verbonden met een goede financiële administratie.</p>
+    <p>Wij hechten veel waarde aan de kwaliteit van jouw administratie, zodat we op basis van betrouwbare cijfers de juiste fiscale keuzes kunnen maken. Zo bouwen we samen aan een solide en toekomstbestendige onderneming.</p>
+  
+    <h2>Onze werkzaamheden per belastingsoort</h2>
+  
+    <div class="voordelen">
+      <div class="voordeel-item">
+          <h3>Omzetbelasting (BTW)</h3>
+          <p>Per maand, kwartaal of jaar moet er een aangifte omzetbelasting worden ingediend. Wij zorgen ervoor dat deze tijdig en correct bij de Belastingdienst wordt ingediend. Ook adviseren wij over aftrekposten, verleggingsregelingen en internationale BTW-vraagstukken, zodat je nooit te veel betaalt.</p>
+      </div>
+  
+      <div class="voordeel-item">
+          <h3>Inkomstenbelasting</h3>
+          <p>Wij verzorgen jouw jaarlijkse aangifte inkomstenbelasting en dienen deze correct en op tijd in bij de Belastingdienst. Daarnaast controleren wij altijd of je optimaal gebruikmaakt van alle beschikbare aftrekposten en regelingen — zodat je niet meer belasting betaalt dan nodig is.</p>
+      </div>
+  
+      <div class="voordeel-item">
+          <h3>Vennootschapsbelasting</h3>
+          <p>Voor BV’s en NV’s stellen wij de aangifte vennootschapsbelasting op en zorgen we voor een correcte en tijdige indiening. We adviseren bovendien over fiscale optimalisatie binnen de onderneming, zoals verliesverrekening, investeringsaftrekken en de juiste winstverdeling.</p>
+      </div>
+  
+      <div class="voordeel-item">
+          <h3>Loonbelasting</h3>
+          <p>Heb je personeel in dienst? Dan zorgen wij voor een juiste verwerking en afdracht van de loonbelasting. Wij helpen je bij het inrichten van een correcte loonadministratie en bij het toepassen van fiscale regelingen zoals de werkkostenregeling (WKR).</p>
+          <p>Zie ook onze dienst <a href="salarisadministratie.html">Salarisadministratie</a> voor meer informatie over loonverwerking en personeelsbeheer.</p>
+      </div>
+    </div><br>
+  
+    <p>Neem vrijblijvend contact met ons op voor een kennismakingsgesprek of fiscaal advies op maat. Wij helpen je graag verder!</p>
+  </section>
+  
 
   <footer class="footer">
     <div class="footer-container">
@@ -145,9 +175,8 @@
     </div>
   </footer>
 
-  <button id="toTopBtn" title="Ga naar boven"><span class="material-symbols-outlined">
-    keyboard_arrow_up
-    </span>
+  <button id="toTopBtn" title="Ga naar boven">
+    <span class="material-symbols-outlined">keyboard_arrow_up</span>
   </button>
 
   <script src="script.js"></script>
