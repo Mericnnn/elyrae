@@ -12,68 +12,87 @@
   </head>
 <body>
 
-  <div class="klein">
-    <div class="left-links">
-      <a href="tel:0617073020">
-        <i class="material-symbols-outlined">call</i>
-        <span>0617073020</span>
-      </a>
-      <a href="mailto:info@raad-administratie.nl">
-        <i class="material-symbols-outlined">email</i>
-        <span>info@raad-administratie.nl</span>
-      </a>
-    </div>
-    <div class="right-links">
-      <a href="https://wa.me/0617073020" target="_blank">
-        <i class="material-symbols-outlined">chat</i>
-        <span>WhatsApp</span>
-      </a>
-      <a href="https://start.exactonline.nl" target="_blank">
-        <i class="material-symbols-outlined">inventory_2</i>
-        <span>Exact Online</span>
-      </a>
-      <a href="https://klantportaal.nextens.nl/login" target="_blank">
-        <i class="material-symbols-outlined">person</i>
-        <span>Klantportaal</span>
-      </a>
-    </div>
-  </div>
-  
-  <header class="header">
-    <div class="logo">
-      <a href="index.html">
-        <img src="Images/raadlogo.webp" alt="RAAD Logo" style="width:100%; height:auto;">
-      </a>
-    </div>
-  
-    <!-- Hamburger -->
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  
-    <!-- Navigatie -->
-    <nav class="nav" id="nav">
-      <a href="index.html" class="active">Home</a>
-      <a href="overstapservice.html" class="active">Overstapservice</a>
-      
-        <!-- Dropdown Diensten -->
-        <div class="dropdown">
-          <a href="#" class="dropbtn">Diensten</a>
-          <div class="dropdown-content">
-            <a href="boekhouding.html">Boekhouding</a>
-            <a href="belastingaangifte.html">Belastingaangifte</a>
-            <a href="salarisadministratie.html">Salarisadministratie</a>
-            <a href="jaarrekening.html">Jaarrekening</a>
-            <a href="#">Financieel Advies</a>
-            <a href="#">Startersbegeleiding</a>
-          </div>
+    <div class="klein">
+        <div class="left-links">
+          <a href="tel:0617073020">
+            <i class="material-symbols-outlined">call</i>
+            <span>0617073020</span>
+          </a>
+          <a href="mailto:info@raad-administratie.nl">
+            <i class="material-symbols-outlined">email</i>
+            <span>info@raad-administratie.nl</span>
+          </a>
         </div>
-
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
-  </header>
+      
+        <!-- Alleen op desktop zichtbaar -->
+        <div class="right-links desktop-only">
+          <a href="https://wa.me/0617073020" target="_blank">
+            <i class="material-symbols-outlined">chat</i>
+            <span>WhatsApp</span>
+          </a>
+          <a href="https://start.exactonline.nl" target="_blank">
+            <i class="material-symbols-outlined">inventory_2</i>
+            <span>Exact Online</span>
+          </a>
+          <a href="https://klantportaal.nextens.nl/login" target="_blank">
+            <i class="material-symbols-outlined">person</i>
+            <span>Klantportaal</span>
+          </a>
+        </div>
+      </div>
+      
+      <header class="header">
+        <div class="logo">
+          <a href="index.html">
+            <img src="Images/raadlogo.webp" alt="RAAD Logo" style="width:100%; height:auto;">
+          </a>
+        </div>
+      
+        <!-- Hamburger -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      
+        <!-- Navigatie -->
+        <nav class="nav" id="nav">
+          <a href="index.html" class="active">Home</a>
+          <a href="overstapservice.html">Overstapservice</a>
+      
+          <!-- Dropdown Diensten -->
+          <div class="dropdown">
+            <a href="#" class="dropbtn">Diensten</a>
+            <div class="dropdown-content">
+              <a href="boekhouding.html">Boekhouding</a>
+              <a href="belastingaangifte.html">Belastingaangifte</a>
+              <a href="salarisadministratie.html">Salarisadministratie</a>
+              <a href="jaarrekening.html">Jaarrekening</a>
+              <a href="#">Financieel Advies</a>
+              <a href="#">Startersbegeleiding</a>
+            </div>
+          </div>
+      
+          <a href="contact.html">Contact</a>
+      
+          <!-- Extra mobiele links -->
+          <div class="mobile-links">
+            <a href="https://wa.me/0617073020" target="_blank">
+              <i class="material-symbols-outlined">chat</i>
+              <span>WhatsApp</span>
+            </a>
+            <a href="https://start.exactonline.nl" target="_blank">
+              <i class="material-symbols-outlined">inventory_2</i>
+              <span>Exact Online</span>
+            </a>
+            <a href="https://klantportaal.nextens.nl/login" target="_blank">
+              <i class="material-symbols-outlined">person</i>
+              <span>Klantportaal</span>
+            </a>
+          </div>
+        </nav>
+      </header>
+      
   <div class="overlay"></div>
 
   <section class="hero">
@@ -148,6 +167,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="overstapservice.html">Overstapservice</a></li>
           <li><a href="offerte.html">Offerte</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -157,10 +177,10 @@
       <div class="footer-column">
         <h3>Diensten</h3>
         <ul>
-          <li><a href="#">Boekhouding</a></li>
-          <li><a href="#">Placeholder dienst 2</a></li>
-          <li><a href="#">Placeholder dienst 3</a></li>
-          <li><a href="#">Placeholder dienst 4</a></li>
+          <li><a href="boekhouding.html">Boekhouding</a></li>
+          <li><a href="salarisadministratie.html">Salarisadministratie</a></li>
+          <li><a href="belastingaangifte.html">Belastingaangifte</a></li>
+          <li><a href="jaarrekening.html">Jaarrekening</a></li>
         </ul>
       </div>
   

@@ -1330,6 +1330,7 @@ body {
   border: none;
   padding: 15px;
   font-weight: 600;
+  color: var(--accent);
   cursor: pointer;
   margin-bottom: 10px;
   transition: background-color 0.3s;
@@ -1342,9 +1343,9 @@ body {
 /* FAQ antwoorden */
 .faq-answer {
   display: none;
+  color: var(--accent);
   padding: 10px 15px;
   background-color: var(--footer);
-  border-radius: 8px;
   margin-bottom: 10px;
 }
 

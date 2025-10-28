@@ -13,17 +13,6 @@
 <body>
 
   <div class="klein">
-    <a href="tel:0617073020" class="footer-contact-link">
-      <i class="material-symbols-outlined">call</i>
-      <span>0617073020</span>
-    </a>
-    <a href="mailto:info@raad-administratie.nl" class="footer-contact-link">
-      <i class="material-symbols-outlined">email</i>
-      <span>info@raad-administratie.nl</span>
-    </a>
-  </div>
-  
-  <div class="klein">
     <div class="left-links">
       <a href="tel:0617073020">
         <i class="material-symbols-outlined">call</i>
@@ -34,7 +23,9 @@
         <span>info@raad-administratie.nl</span>
       </a>
     </div>
-    <div class="right-links">
+  
+    <!-- Alleen op desktop zichtbaar -->
+    <div class="right-links desktop-only">
       <a href="https://wa.me/0617073020" target="_blank">
         <i class="material-symbols-outlined">chat</i>
         <span>WhatsApp</span>
@@ -67,24 +58,41 @@
     <!-- Navigatie -->
     <nav class="nav" id="nav">
       <a href="index.html" class="active">Home</a>
-      <a href="overstapservice.html" class="active">Overstapservice</a>
-      
-        <!-- Dropdown Diensten -->
-        <div class="dropdown">
-          <a href="#" class="dropbtn">Diensten</a>
-          <div class="dropdown-content">
-            <a href="boekhouding.html">Boekhouding</a>
-            <a href="belastingaangifte.html">Belastingaangifte</a>
-            <a href="salarisadministratie.html">Salarisadministratie</a>
-            <a href="jaarrekening.html">Jaarrekening</a>
-            <a href="#">Financieel Advies</a>
-            <a href="#">Startersbegeleiding</a>
-          </div>
+      <a href="overstapservice.html">Overstapservice</a>
+  
+      <!-- Dropdown Diensten -->
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Diensten</a>
+        <div class="dropdown-content">
+          <a href="boekhouding.html">Boekhouding</a>
+          <a href="belastingaangifte.html">Belastingaangifte</a>
+          <a href="salarisadministratie.html">Salarisadministratie</a>
+          <a href="jaarrekening.html">Jaarrekening</a>
+          <a href="#">Financieel Advies</a>
+          <a href="#">Startersbegeleiding</a>
         </div>
-
-      <a href="contact.html" class="active">Contact</a>
+      </div>
+  
+      <a href="contact.html">Contact</a>
+  
+      <!-- Extra mobiele links -->
+      <div class="mobile-links">
+        <a href="https://wa.me/0617073020" target="_blank">
+          <i class="material-symbols-outlined">chat</i>
+          <span>WhatsApp</span>
+        </a>
+        <a href="https://start.exactonline.nl" target="_blank">
+          <i class="material-symbols-outlined">inventory_2</i>
+          <span>Exact Online</span>
+        </a>
+        <a href="https://klantportaal.nextens.nl/login" target="_blank">
+          <i class="material-symbols-outlined">person</i>
+          <span>Klantportaal</span>
+        </a>
+      </div>
     </nav>
   </header>
+  
   <div class="overlay"></div>
     
   <!-- HERO / Intro -->
@@ -183,6 +191,35 @@
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </section>
+
+     <!-- FAQ --> 
+     <section class="faq">
+      <img src="Images/faq.webp" alt="Hero" class="faq-img" loading="eager">
+      <h2>FAQ</h2>
+      <h3>Veel gestelde vragen</h3>
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question">Wat doet Administratiekantoor RAAD Administratie & Advies precies?</button>
+          <div class="faq-answer">
+            <p>Wij verzorgen administratie, belastingaangiftes, salarisverwerking en financiële adviezen voor particulieren en ondernemers.</p>
+          </div>
+        </div>
+  
+        <div class="faq-item">
+          <button class="faq-question">Voor wie zijn jullie diensten bedoeld?</button>
+          <div class="faq-answer">
+            <p>Onze diensten zijn geschikt voor zzp’ers, kleine bedrijven en particulieren die hun administratie professioneel willen laten beheren.</p>
+          </div>
+        </div>
+  
+        <div class="faq-item">
+          <button class="faq-question">Hoe kan ik een offerte aanvragen?</button>
+          <div class="faq-answer">
+            <p>Je kunt eenvoudig via onze <a href="offerte.html">offertepagina</a> een aanvraag indienen. Wij nemen vervolgens snel contact met je op.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   
   <footer class="footer">
     <div class="footer-container">
@@ -191,7 +228,7 @@
       </div>
   
       <!-- Openingstijden -->
-      <div class="footer-column">
+      <!-- <div class="footer-column">
         <h3>Openingstijden</h3>
         <ul class="opening-hours">
           <li>Maandag: 09:00 - 18:00</li>
@@ -202,7 +239,7 @@
           <li>Zaterdag: 10:00 - 17:00</li>
           <li>Zondag: Gesloten</li>
         </ul>
-      </div>
+      </div> -->
 
     <!-- Snelle links -->
     <div class="footer-column">
@@ -210,7 +247,8 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="diensten.html">Diensten</a></li>
-          <li><a href="offerte.html" class="active">Offerte</a></li>
+          <li><a href="overstapservice.html">Overstapservice</a></li>
+          <li><a href="offerte.html">Offerte</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -219,10 +257,10 @@
       <div class="footer-column">
         <h3>Diensten</h3>
         <ul>
-          <li><a href="#">Placeholder dienst 1</a></li>
-          <li><a href="#">Placeholder dienst 2</a></li>
-          <li><a href="#">Placeholder dienst 3</a></li>
-          <li><a href="#">Placeholder dienst 4</a></li>
+          <li><a href="boekhouding.html">Boekhouding</a></li>
+          <li><a href="salarisadministratie.html">Salarisadministratie</a></li>
+          <li><a href="belastingaangifte.html">Belastingaangifte</a></li>
+          <li><a href="jaarrekening.html">Jaarrekening</a></li>
         </ul>
       </div>
   
