@@ -2348,3 +2348,47 @@ body {
     padding: 10px 20px;
   }
 }
+
+/* Cookie Consent */
+.cookie-consent {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0,0,0,0.85);
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 9999;
+  font-size: 0.95rem;
+  flex-wrap: wrap;
+  max-width: 500px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.cookie-consent a {
+  color: var(--footer);
+  text-decoration: underline;
+}
+
+.cookie-consent button {
+  background-color: var(--footer);
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.cookie-consent button:hover {
+  background-color: var(--soft);
+}
+
+/* Verberg popup als deze is geaccepteerd */
+.cookie-consent.hide {
+  display: none;
+}

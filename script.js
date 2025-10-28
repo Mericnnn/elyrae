@@ -114,4 +114,20 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   });
+
+  // ===== COOKIE CONSENT =====
+  const cookieConsent = document.getElementById('cookieConsent');
+  const acceptBtn = document.getElementById('acceptCookies');
+
+  if (cookieConsent && acceptBtn) {
+    if (localStorage.getItem('cookiesAccepted') === 'true') {
+      cookieConsent.classList.add('hide');
+    }
+
+    acceptBtn.addEventListener('click', () => {
+      localStorage.setItem('cookiesAccepted', 'true');
+      cookieConsent.classList.add('hide');
+    });
+  }
+
 });
