@@ -2030,7 +2030,7 @@ body {
 .hero-overstap {
   background: var(--accent);
   color: #fff;
-  padding: 10px 20px;
+  padding: 20px 30px;
   text-align: center;
 }
 
@@ -2122,10 +2122,17 @@ body {
   backdrop-filter: blur(8px);
   border-radius: 16px;
   padding: 25px;
+  display: block;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   color: #fff;
 }
 
+/* Verbergen op mobiel */
+@media (max-width: 900px) {
+  .hero-card {
+    display: none; /* niet zichtbaar op mobiel */
+  }
+}
 .card-grid {
   display: flex;
   flex-direction: column;
