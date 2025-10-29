@@ -352,7 +352,7 @@ body {
   }
 
   .dropdown.open .dropdown-content {
-    display: flex;
+    display: flex !important;
   }
 
   .dropdown .dropbtn::after {
@@ -547,7 +547,7 @@ body {
 }
 
 .footer-column a:hover {
-  color: var(--background);
+  color:rgb(151, 0, 0);
 }
 
 .whatsapp-link2 {
@@ -1765,19 +1765,19 @@ body {
   background-color: var(--soft);
   transform: translateY(-2px);
 }
+
 @media (max-width: 768px) {
   .reasons-grid {
     grid-template-columns: 1fr;
   }
 
+  /* Geen hover dropdown op mobiel! */
   .dropdown-content {
     position: static;
     box-shadow: none;
   }
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
 }
+
 
 /* -------------------- BOEKHOUDING PAGINA -------------------- */
 .boekhouding {
@@ -1971,13 +1971,13 @@ body {
 .jaarrekening p {
   font-size: 1rem;
   line-height: 1.8;
-  padding-top: 20px;
   color: #555;
   margin-bottom: 20px;
 }
 
 .jaarrekening h2 {
   font-size: 1.7rem;
+  padding-bottom:10px;
   color: var(--accent);
   border-bottom: 3px solid var(--soft);
 }
@@ -1985,7 +1985,6 @@ body {
 .jaarrekening h3 {
   font-size: 1rem;
   line-height: 1.2;
-  margin-bottom: 20px;
   color: var(--accent);
   font-weight: 700;
 }
@@ -1999,6 +1998,7 @@ body {
 .jaarrekening ul li {
   margin-bottom: 10px;
   color: #555;
+  margin-top: 10px;
   font-size: 1rem;
 }
 

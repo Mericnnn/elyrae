@@ -85,35 +85,42 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ===== MOBILE DROPDOWN TOGGLE =====
-  const dropdowns = document.querySelectorAll('.dropdown');
+const dropdowns = document.querySelectorAll('.dropdown');
 
-  dropdowns.forEach(drop => {
-    const btn = drop.querySelector('.dropbtn');
+dropdowns.forEach(drop => {
+  const btn = drop.querySelector('.dropbtn');
 
-    btn.addEventListener('click', e => {
-      if (window.innerWidth <= 900) {
-        e.preventDefault();
-        const isOpen = drop.classList.contains('open');
-
-        // Sluit alle dropdowns
-        dropdowns.forEach(d => d.classList.remove('open'));
-
-        // Open huidige dropdown als hij nog niet open was
-        if (!isOpen) drop.classList.add('open');
-      }
-    });
-  });
-
-  // Klik buiten dropdown sluit open dropdowns
-  document.addEventListener('click', e => {
+  btn.addEventListener('click', e => {
+    // Alleen voor mobiel gedrag
     if (window.innerWidth <= 900) {
-      dropdowns.forEach(drop => {
-        if (!drop.contains(e.target)) {
-          drop.classList.remove('open');
-        }
-      });
+      e.preventDefault();
+      e.stopPropagation(); // <<< belangrijk: voorkomt dat document-click direct sluit
+      const isOpen = drop.classList.contains('open');
+
+      // Sluit alle dropdowns
+      dropdowns.forEach(d => d.classList.remove('open'));
+
+      // Open huidige dropdown als hij nog niet open was
+      if (!isOpen) drop.classList.add('open');
     }
   });
+});
+
+// Klik buiten dropdown sluit open dropdowns (alleen mobiel)
+document.addEventListener('click', e => {
+  if (window.innerWidth <= 900) {
+    const anyOpen = Array.from(dropdowns).some(d => d.classList.contains('open'));
+    if (anyOpen) {
+      // check of click buiten dropdowns en hamburger valt
+      const clickedInsideDropdown = e.target.closest('.dropdown');
+      const clickedHamburger = e.target.closest('#hamburger');
+      if (!clickedInsideDropdown && !clickedHamburger) {
+        dropdowns.forEach(d => d.classList.remove('open'));
+      }
+    }
+  }
+});
+
 
   // ===== COOKIE CONSENT =====
   const cookieConsent = document.getElementById('cookieConsent');
