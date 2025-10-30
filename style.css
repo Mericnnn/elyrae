@@ -2349,24 +2349,24 @@ body {
   }
 }
 
-/* Cookie Consent */
+/* Cookie Consent - full width, centered */
 .cookie-consent {
   position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0,0,0,0.85);
+  bottom: 0; /* helemaal onderaan */
+  left: 0;
+  width: 100%; /* volledige breedte */
+  background-color: rgba(0, 0, 0, 0.85);
   color: #fff;
-  padding: 15px 20px;
-  border-radius: 8px;
+  padding: 15px 0; /* alleen verticaal padding */
   display: flex;
-  align-items: center;
-  gap: 15px;
+  flex-direction: column; /* zodat tekst en knop onder elkaar staan */
+  align-items: center; /* horizontaal centreren */
+  justify-content: center;
+  gap: 10px;
   z-index: 9999;
-  font-size: 0.95rem;
-  flex-wrap: wrap;
-  max-width: 500px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  font-size: 1rem;
+  box-shadow: 0 -4px 15px rgba(0,0,0,0.3);
+  text-align: center; /* tekst centreren */
 }
 
 .cookie-consent a {
@@ -2377,12 +2377,14 @@ body {
 .cookie-consent button {
   background-color: var(--footer);
   border: none;
-  padding: 8px 12px;
+  padding: 10px 20px;
   cursor: pointer;
   color: white;
   font-weight: bold;
   transition: background 0.3s ease;
+  border-radius: 5px;
 }
+
 
 .cookie-consent button:hover {
   background-color: var(--soft);
