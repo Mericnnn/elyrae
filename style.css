@@ -383,7 +383,7 @@ body {
   text-align: center;      /* tekst centreren */
 }
 
-.hero-text h1 { font-size: 3.4rem; color: var(--text2); font-family: 'Playfair Display', serif; margin-bottom: 10px; font-weight: 600; } /* Hero subtitel */ .hero-text p { font-size: 1.2rem; color: var(--text); margin-bottom: 20px; }
+.hero-text h1 { font-size: 3.4rem; color: var(--text2); margin-bottom: 10px; font-weight: 600; } /* Hero subtitel */ .hero-text p { font-size: 1.2rem; color: var(--text); margin-bottom: 20px; }
 .hero2 {
   position: relative;
   width: 100%;
@@ -420,7 +420,6 @@ body {
 /* Hero titel */
 .hero2 .hero-text h1 {
   font-size: 4rem;   /* eventueel kleiner voor hero2 */
-  font-family: 'Playfair Display', serif;
   margin-bottom: 10px;
   font-weight: 600;
   color: var(--text2);
@@ -456,7 +455,6 @@ body {
 }
 
 .featured h2 {
-  font-family: 'Playfair Display', serif;
   margin-bottom: 50px;
   border-bottom: 3px solid var(--accent);
   font-size: 2rem;
@@ -703,13 +701,7 @@ body {
   color: var(--accent); /* kleur verandert */
 }
 
-.contact-card .img {
-  font-size: 3rem; /* veel groter dan standaard */
-  color: var(--soft);
-  transition: transform 0.3s ease, color 0.3s ease;
-  margin-bottom: 15px;
-  display: block;
-}
+
 
 /* Tekst onder icon */
 .contact-card p, 
@@ -826,7 +818,6 @@ body {
   border-bottom: 3px solid #837263;
   display: inline-block;
   padding-bottom: 5px;
-  font-family: 'Playfair Display', serif;
 }
 
 /* Grid layout */
@@ -1006,7 +997,6 @@ body {
   /* Hero titel */
   .hero2 .hero-text h1 {
     font-size: 2rem;   /* eventueel kleiner voor hero2 */
-    font-family: 'Playfair Display', serif;
     margin-bottom: 10px;
     color: var(--text2);
     font-weight: 600;
@@ -1371,7 +1361,7 @@ body {
 }
 
 .cta-container {
-  max-width: 800px;
+  max-width: 1700px;
   position: relative;
   z-index: 2;
 }
@@ -1379,7 +1369,6 @@ body {
 .cta h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  font-family: 'Playfair Display', serif;
 }
 
 .cta p {
@@ -1399,6 +1388,7 @@ body {
 
 .cta-btn:hover {
   background-color: #f0f0f0;
+  color:var(--soft);
 }
 
 /* Afbeelding binnen sectie, half erboven */
@@ -1496,7 +1486,6 @@ body {
 
 .overstap-cta-content h2 {
   font-size: 2.2rem;
-  font-family: 'Playfair Display', serif;
   color: #222;
   border-bottom: 3px solid #837263;
   padding-bottom: 5px ;
@@ -1546,7 +1535,6 @@ body {
   }
   .overstap-cta-content h2 {
     font-size: 1.6rem;
-    font-family: 'Playfair Display', serif;
     color: #222;
   }
   
@@ -1796,7 +1784,7 @@ body {
 }
 
 .boekhouding h2 {
-  font-family: 'Playfair Display', serif;
+
   font-size: 2rem;
   color: var(--accent);
   margin-top: 50px;
@@ -1843,7 +1831,6 @@ body {
 }
 
 .voordeel-item h3 {
-  font-family: 'Playfair Display', serif;
   color: var(--accent);
   margin-bottom: 12px;
   font-size: 1.3rem;
