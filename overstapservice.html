@@ -207,6 +207,7 @@
         method="POST" 
         data-netlify="true" 
         netlify-honeypot="bot-field"
+        data-netlify-recaptcha="true" 
         action="/bedankt-overstap"
         class="overstap-form"
     >
@@ -240,6 +241,9 @@
         <label for="message">Bericht</label>
         <textarea id="message" name="message" rows="4" placeholder="Eventuele extra informatie..."></textarea>
         </div>
+
+        <!-- reCAPTCHA -->
+        <div data-netlify-recaptcha="true"></div>
     
         <button type="submit" class="form-btn">Verstuur aanvraag</button>
   </form>  

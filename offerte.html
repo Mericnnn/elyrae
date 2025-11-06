@@ -107,7 +107,7 @@
         <h2>Vraag een vrijblijvende offerte aan</h2>
         <p>Vul onderstaand formulier in. We reageren meestal binnen 1 werkdag.</p>
 
-        <form id="offerteForm" name="offerte" method="POST" data-netlify="true" netlify-honeypot="bot-field"    action="/thank-you-offerte">
+        <form id="offerteForm" name="offerte" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" action="/thank-you-offerte">
           <input type="hidden" name="form-name" value="offerte">
           <div style="display:none;">
             <label>Laat dit veld leeg: <input name="bot-field" /></label>
@@ -128,6 +128,8 @@
 
           <textarea name="bericht" rows="5" placeholder="Bericht of toelichting..."></textarea>
 
+
+          <div data-netlify-recaptcha="true"></div>
           <button type="submit">Versturen</button>
         </form>
 
