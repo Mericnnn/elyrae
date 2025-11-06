@@ -152,6 +152,7 @@
         name="contact" 
         method="POST" 
         data-netlify="true" 
+        data-netlify-recaptcha="true" 
         netlify-honeypot="bot-field"
         action="/thank-you"
       >
@@ -169,6 +170,8 @@
           <label>Bericht</label>
           <textarea name="message" rows="6" placeholder="Typ hier je bericht..." required></textarea>
       
+            <!-- reCAPTCHA -->
+          <div data-netlify-recaptcha="true"></div>
           <button type="submit" class="btn">Verstuur bericht</button>
       </form><br><br>
     
