@@ -386,7 +386,8 @@ body {
 .hero2 {
   position: relative;
   width: 100%;
-  height: 700px;
+  background: linear-gradient(135deg, #917c6e70, #634e41);
+  height: 500px;
   overflow: hidden;
 }
 
@@ -398,19 +399,10 @@ body {
   filter: brightness(115%);
 }
 
-.hero2 .hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.1); /* wit overlay voor lichtere look */
-}
-
 .hero2 .hero-text {
   position: absolute;
-  top: 150px;      /* 20px van onderkant */
-  right: 130px;        /* 20px van linkerkant */
+  top: 135px;      /* 20px van onderkant */
+  right: 61px;        /* 20px van linkerkant */
   transform: none;   /* verwijder centrering */
   text-align: right;  /* tekst links uitlijnen */
   z-index: 2;        /* bovenop de hero afbeelding */
@@ -418,7 +410,7 @@ body {
 
 /* Hero titel */
 .hero2 .hero-text h1 {
-  font-size: 4rem;   /* eventueel kleiner voor hero2 */
+  font-size: 4.5rem;   /* eventueel kleiner voor hero2 */
   margin-bottom: 10px;
   font-weight: 600;
   color: var(--text2);
@@ -428,17 +420,18 @@ body {
 .hero2 .hero-text p {
   font-size: 1.2rem;
   color: var(--text2);
+  font-weight:600;
   margin-bottom: 15px;
 }
 
 /* Hero button */
 .hero2 .btn {
-  background-color: var(--background);
-  padding: 15px 40px;
+  background-color: var(--accent);
+  padding: 10px 40px;
   text-decoration: none;
   font-weight: 600;
   font-size: 20px;
-  color: var(--accent);
+  color: var(--text2);
   transition: 0.3s;
 }
 
@@ -654,7 +647,7 @@ body {
 .contact-section {
   padding: 80px 60px;
   color: var(--accent);
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -977,7 +970,7 @@ body {
 
   } 
   .hero2 {
-    height: 400px;
+    height: 350px;
   }
 
   .hero2 .hero-text {
@@ -991,7 +984,7 @@ body {
   
   /* Hero titel */
   .hero2 .hero-text h1 {
-    font-size: 2rem;   /* eventueel kleiner voor hero2 */
+    font-size: 2.1rem;   /* eventueel kleiner voor hero2 */
     margin-bottom: 10px;
     color: var(--text2);
     font-weight: 600;
@@ -1074,18 +1067,6 @@ body {
   margin-bottom: 30px;
   font-size: 2em;
 }
-/* Over ons + Missie & Visie gecombineerde layout */
-.about-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 40px;
-  max-width: 1200px;
-  margin: 80px auto;
-  padding: 0 20px;
-}
-
 /* Linkerkant: tekst */
 .about-left {
   flex: 1 1 500px;
@@ -1340,19 +1321,22 @@ body {
   margin-bottom: 10px;
 }
 
+.faq-answer a{
+ color:var(--accent);
+ font-weight: 700;
+
+}
+
+
 .faq-item.active .faq-answer {
   display: block;
 }
 
 .cta {
-  position: relative;
-  background-color: var(--accent);
-  color: white;
-  margin-top:150px;
-  text-align: left;
-  padding: 120px 20px 60px 20px; /* top padding groter om ruimte voor afbeelding te maken */
-  border-radius: 15px;
-  overflow: visible; /* afbeelding mag buiten de sectie steken */
+  margin: 50px auto;
+  max-width: 1400px;
+  text-align: center;
+  padding:10px;
 }
 
 .cta-container {
@@ -1363,27 +1347,39 @@ body {
 
 .cta h2 {
   font-size: 2.5rem;
+  color: #0f172a;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .cta p {
+  color: #475569;
   font-size: 1.1rem;
-  margin-bottom: 30px;
+  line-height: 1.7;
+  max-width: 750px;
+  margin: 0 auto 30px;
+}
+
+strong {
+  font-weight: 700;
+  color:black;
 }
 
 .cta-btn {
-  background-color: white;
-  padding: 12px 35px;
+  display: inline-block;
+  background-color: var(--accent);
+  color: white;
+  padding: 14px 30px;
   text-decoration: none;
   font-weight: 600;
-  border-radius: 8px;
-  color: var(--footer);
-  transition: 0.3s;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
 }
 
 .cta-btn:hover {
-  background-color: #f0f0f0;
-  color:var(--soft);
+  background-color: var(--soft);
+  border-color: var(--soft);
+  transform: translateY(-3px);
 }
 
 /* Afbeelding binnen sectie, half erboven */
@@ -1508,20 +1504,17 @@ body {
 
 /* Responsief voor mobiel */
 @media (max-width: 768px) {
-  .cta {
-    padding-top: 100px; /* minder top padding op mobiel */
-    text-align: center;
-  }
-
-  .cta-img {
-    right: 50%;
-    transform: translateX(50%);
-    width: 70%; /* past mooi op mobiel */
-  }
 
   .cta h2 {
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     margin-bottom: 20px;
+  }
+  .cta p {
+    color: #475569;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    max-width: 750px;
+    margin: 0 auto 30px;
   }
   .cta-btn {
     display: inline-block;
@@ -1776,7 +1769,7 @@ body {
 /* -------------------- BOEKHOUDING PAGINA -------------------- */
 .boekhouding {
   padding: 50px 20px;
-  max-width: 1200px;
+  max-width: 1400px;
   color: var(--accent);
   margin: 0 auto;
 }
@@ -1848,7 +1841,7 @@ body {
 /* -------------------- SALARISADMINISTRATIE -------------------- */
 .salarisadministratie {
   padding: 50px 20px;
-  max-width: 1200px;
+  max-width: 1400px;
   color: var(--accent);
   margin: 0 auto;
 }
@@ -1925,7 +1918,7 @@ body {
 /* -------------------- BELASTINGAANGIFTE -------------------- */
 .belastingaangifte {
   padding: 50px 20px;
-  max-width: 1200px;
+  max-width: 1400px;
   color: var(--accent);
   margin: 0 auto;
 }
@@ -1956,7 +1949,7 @@ body {
 /* -------------------- JAARREKENING SECTION -------------------- */
 .jaarrekening {
   padding: 50px 20px;
-  max-width: 1200px;
+  max-width: 1400px;
   color: var(--accent);
   margin: 0 auto;
 }
@@ -2023,62 +2016,34 @@ body {
 .hero-overstap {
   background: var(--accent);
   color: #fff;
-  padding: 20px 30px;
+  display: flex;
+  justify-content: center; /* horizontaal centreren */
+  align-items: center; /* verticaal centreren */
   text-align: center;
+  padding: 40px 20px;
 }
 
 .hero-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  gap: 40px;
+  max-width: 800px;
 }
 
-@media (min-width: 768px) {
-  .hero-overstap {
-    text-align: left;
-    padding: 30px 40px;
-  }
-
-  .hero-container {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-/* Tekst */
 .overstap-text h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 1.3;
   margin-bottom: 20px;
 }
 
-@media (min-width: 768px) {
-  .overstap-text h1 {
-    font-size: 2.5rem;
-  }
-}
-
 .overstap-text p {
-  font-size: 1.05rem;
-  margin-bottom: 25px;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
   color: #f1f5f9;
-  max-width: 500px;
 }
 
-/* Knoppen */
 .hero-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
-}
-
-@media (min-width: 768px) {
-  .hero-buttons {
-    justify-content: flex-start;
-  }
 }
 
 .hero-buttons a {
@@ -2088,6 +2053,21 @@ body {
   text-decoration: none;
   transition: all 0.3s ease;
 }
+
+/* Verwijder alle media-query aanpassingen die het naar links duwen */
+@media (min-width: 768px) {
+  .hero-overstap {
+    text-align: center;
+    padding: 60px 40px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+  
+}
+
+
 
 .btn-primary {
   background-color: var(--footer);
@@ -2169,9 +2149,9 @@ body {
   background: #fff;
   border-radius: 20px;
   padding: 60px 20px;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 80px auto;
-  box-shadow: 0 8px 25px rgba(160, 160, 160, 0.178);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.062);
 }
 
 .ontzorgd-section h2 {
@@ -2191,6 +2171,7 @@ body {
   .ontzorgd-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+  
 }
 
 .ontzorgd-card {
@@ -2247,8 +2228,6 @@ body {
 
 /* Overstappen Sectie (Homepagina) */
 .overstap-home {
-  border-radius: 20px;
-  padding: 80px 25px;
   margin: 80px auto;
   max-width: 1000px;
   text-align: center;
@@ -2284,6 +2263,33 @@ body {
   background-color: var(--soft);
   border-color: var(--soft);
   transform: translateY(-3px);
+}
+@media (max-width: 900px) {
+  .overstap-content h2 {
+    font-size: 1.8rem;
+    color: #0f172a;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+
+  .overstap-content{
+    padding:10px;
+  }
+  .overstap-home {
+    max-width: 1000px;
+    text-align: center;
+    margin: 0;
+    padding:10px;
+  }
+  
+  .overstap-content p {
+    color: #475569;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    max-width: 750px;
+    margin: 0 auto 30px;
+  }
+  
 }
 
 .thank-you-content {
@@ -2340,6 +2346,7 @@ body {
     font-size: 0.95rem;
     padding: 10px 20px;
   }
+  
 }
 
 /* Cookie Consent - full width, centered */
