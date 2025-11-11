@@ -5,7 +5,7 @@ contactForm.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const formData = Object.fromEntries(new FormData(contactForm).entries());
-  const secretKey = "r4ad_Adm1n_contact_2025_secret!@#"; // zelfde als in backend
+  const secretKey = "r4ad_Adm1n_contact_2025_secret!@#"; // zelfde als CONTACT_SECRET_KEY
 
   contactStatusMsg.textContent = "Versturen...";
 
@@ -19,10 +19,10 @@ contactForm.addEventListener("submit", async (e) => {
     const data = await response.json();
 
     if (data.success) {
-      contactStatusMsg.textContent = "Bericht succesvol verstuurd! We nemen binnen 24u contact op.";
+      contactStatusMsg.textContent = " Bericht succesvol verstuurd! We nemen binnen 24u contact op.";
       contactForm.reset();
     } else {
-      contactStatusMsg.textContent = "⚠️ Versturen mislukt, probeer later opnieuw.";
+      contactStatusMsg.textContent = `⚠️ Versturen mislukt: ${data.message || "Probeer later opnieuw."}`;
     }
   } catch (err) {
     console.error(err);
