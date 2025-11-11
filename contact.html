@@ -146,35 +146,29 @@
       </div>
 
       <!-- Contact Formulier -->
-      <div class="contact-form fade-in-up">
-        <h2>Stuur ons een bericht</h2>
-        <form 
-        name="contact" 
-        method="POST" 
-        data-netlify="true" 
-        data-netlify-recaptcha="true" 
-        netlify-honeypot="bot-field"
-        action="/thank-you"
-      >
-          <input type="hidden" name="form-name" value="contact">
-          <p hidden>
-              <label>Laat dit veld leeg: <input name="bot-field"></label>
-          </p>
-      
-          <label>Naam</label>
-          <input type="text" name="name" placeholder="Je naam" required>
-      
-          <label>Email</label>
-          <input type="email" name="email" placeholder="je@email.nl" required>
-      
-          <label>Bericht</label>
-          <textarea name="message" rows="6" placeholder="Typ hier je bericht..." required></textarea>
-      
-            <!-- reCAPTCHA -->
-          <div data-netlify-recaptcha="true"></div>
-          <button type="submit" class="btn">Verstuur bericht</button>
-      </form><br><br>
-    
+    <div class="contact-form fade-in-up">
+      <h2>Stuur ons een bericht</h2>
+
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <label for="contactName">Naam</label>
+          <input type="text" id="contactName" name="name" placeholder="Je naam" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contactEmail">Email</label>
+          <input type="email" id="contactEmail" name="email" placeholder="je@email.nl" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contactMessage">Bericht</label>
+          <textarea id="contactMessage" name="message" rows="6" placeholder="Typ hier je bericht..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Verstuur bericht</button>
+      </form>
+
+      <p id="contactStatusMsg"></p>
         <p>
             <a href="https://wa.me/31617073020" target="_blank" class="whatsapp-link"> 
                 <img src="Images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
