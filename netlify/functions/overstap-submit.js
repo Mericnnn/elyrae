@@ -32,7 +32,7 @@ export const handler = async (event) => {
         };
       }
   
-      const formspreeEndpoint = "https://formspree.io/f/mgvrenaa";
+      const formspreeEndpoint = "https://formspree.io/f/xjkjvade";
       await fetch(formspreeEndpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json" },

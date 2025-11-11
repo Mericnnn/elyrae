@@ -7,7 +7,7 @@ form.addEventListener("submit", async (e) => {
   const formData = Object.fromEntries(new FormData(form).entries());
   const secretKey = "r4ad_Adm1n_ov3rstap_2025_secret!@#"; // zelfde als backend
 
-  statusMsg.textContent = "⏳ Versturen...";
+  statusMsg.textContent = "Versturen...";
 
   try {
     const response = await fetch("/.netlify/functions/overstap-submit", {
@@ -19,7 +19,7 @@ form.addEventListener("submit", async (e) => {
     const data = await response.json();
 
     if (data.success) {
-      statusMsg.textContent = "✅ Aanvraag succesvol verstuurd! We nemen spoedig contact op.";
+      statusMsg.textContent = "Aanvraag succesvol verstuurd! We nemen binnen 24u contact op.";
       form.reset();
     } else {
       statusMsg.textContent = "⚠️ Versturen mislukt, probeer later opnieuw.";
