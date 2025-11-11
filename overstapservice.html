@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+dus zo > <!DOCTYPE html>
 <html lang="nl">
   <head>
     <meta charset="UTF-8">
@@ -194,60 +194,44 @@
       </div>
     </div>
   </section>
-  
-  <!-- Overstap formulier -->
-  <section id="contact" class="overstap-form-section fade-in-up">
-    <h2>Klaar om zorgeloos over te stappen?</h2>
-    <p class="intro-text">
-      Laat je gegevens achter en wij nemen binnen één werkdag contact met je op om de overstap te starten.
-    </p>
-  
-    <form 
-        name="overstap-formulier" 
-        method="POST" 
-        data-netlify="true" 
-        netlify-honeypot="bot-field"
-        data-netlify-recaptcha="true" 
-        action="/bedankt-overstap"
-        class="overstap-form"
-    >
-        <!-- Verborgen Netlify-velden -->
-        <input type="hidden" name="form-name" value="overstap-formulier">
-        <p hidden>
-        <label>Niet invullen: <input name="bot-field" /></label>
-        </p>
-    
-        <div class="form-group">
-        <label for="name">Naam</label>
-        <input type="text" id="name" name="name" required placeholder="Jouw naam">
-        </div>
-    
-        <div class="form-group">
-        <label for="email">E-mailadres</label>
-        <input type="email" id="email" name="email" required placeholder="jouw@email.nl">
-        </div>
-    
-        <div class="form-group">
-        <label for="phone">Telefoonnummer</label>
-        <input type="tel" id="phone" name="phone" required placeholder="06-12345678">
-        </div>
-    
-        <div class="form-group">
-        <label for="bedrijf">Bedrijfsnaam</label>
-        <input type="text" id="bedrijf" name="bedrijf" placeholder="Naam van je bedrijf (optioneel)">
-        </div>
-    
-        <div class="form-group">
-        <label for="message">Bericht</label>
-        <textarea id="message" name="message" rows="4" placeholder="Eventuele extra informatie..."></textarea>
-        </div>
 
-        <!-- reCAPTCHA -->
-        <div data-netlify-recaptcha="true"></div>
-    
-        <button type="submit" class="form-btn">Verstuur aanvraag</button>
-  </form>  
-  </section>
+<!-- Overstap formulier -->
+<section id="contact" class="overstap-form-section fade-in-up">
+  <h2>Klaar om zorgeloos over te stappen?</h2>
+  <p class="intro-text">Laat je gegevens achter en wij nemen binnen één werkdag contact met je op om de overstap te starten.</p>
+
+  <form id="overstapForm" class="overstap-form">
+    <div class="form-group">
+      <label for="name">Naam</label>
+      <input type="text" id="name" name="name" required placeholder="Jouw naam">
+    </div>
+
+    <div class="form-group">
+      <label for="email">E-mailadres</label>
+      <input type="email" id="email" name="email" required placeholder="jouw@email.nl">
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Telefoonnummer</label>
+      <input type="tel" id="phone" name="phone" required placeholder="06-12345678">
+    </div>
+
+    <div class="form-group">
+      <label for="bedrijf">Bedrijfsnaam</label>
+      <input type="text" id="bedrijf" name="bedrijf" placeholder="Naam van je bedrijf (optioneel)">
+    </div>
+
+    <div class="form-group">
+      <label for="message">Bericht</label>
+      <textarea id="message" name="message" rows="4" placeholder="Eventuele extra informatie..."></textarea>
+    </div>
+
+    <button type="submit" class="form-btn">Verstuur aanvraag</button>
+  </form>
+
+  <p id="statusMsg"></p>
+</section>
+
 
   <footer class="footer">
     <div class="footer-container">
@@ -344,6 +328,7 @@
   </button>
 
   <script src="script.js"></script>
+  <script src="assets/js/overstap.js"></script>
 
 </body>
 </html>
