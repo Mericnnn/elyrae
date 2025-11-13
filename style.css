@@ -1301,6 +1301,7 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   border: none;
   padding: 15px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--accent);
   cursor: pointer;
@@ -1317,6 +1318,7 @@ body {
   display: none;
   color: var(--accent);
   padding: 10px 15px;
+  font-size: 14px;
   background-color: var(--footer);
   margin-bottom: 10px;
 }
